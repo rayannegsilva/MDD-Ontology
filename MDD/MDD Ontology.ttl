@@ -1,0 +1,328 @@
+@prefix : <http://www.semanticweb.org/rayan/ontologies/2024/9/mdd_ontology#>.
+@prefix gufo: <http://purl.org/nemo/gufo#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<http://www.semanticweb.org/rayan/ontologies/2024/9/mdd_ontology> rdf:type owl:Ontology;
+    owl:imports gufo:.
+:Person rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Person"@en.
+:Psychiatrist rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "Psychiatrist"@en.
+:Patient rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "Patient"@en.
+:Adult rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
+    rdfs:label "Adult"@en.
+:Teenager rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
+    rdfs:label "Teenager"@en.
+:SchoolAge rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
+    rdfs:label "School Age\n"@en.
+:PreschoolAge rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
+    rdfs:label "Preschool Age\n"@en.
+:MedicalReport rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Relator;
+    rdfs:label "Medical Report"@en.
+:MedicalCondition rdf:type owl:Class, gufo:Mixin, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Medical Condition"@en.
+:Severity rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:IntrinsicMode;
+    rdfs:label "Severity"@en.
+:Course rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:IntrinsicMode;
+    rdfs:label "Course"@en.
+:RecurringEpisode rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Recurring Episode"@en.
+:SingleEpisode rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Single Episode"@en.
+:Mild rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Mild"@en.
+:Moderate rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Moderate"@en.
+:Severe rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Severe"@en.
+:MajorDepressiveDisorder rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Major Depressive Disorder"@en.
+:DepressiveBaseCondition rdf:type owl:Class, gufo:Category, owl:NamedIndividual;
+    rdfs:label "Depressive base condition"@en.
+:Specifiers rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Quality;
+    rdfs:label "Specifiers"@en.
+:DSM5MDDSymptom rdf:type owl:Class, gufo:Mixin, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "DSM-5 MDD Symptom"@en.
+:AnxiousDistress rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Anxious distress"@en.
+:MixedFeatures rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Mixed features"@en.
+:Melancholic rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Melancholic"@en.
+:Atypical rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Atypical"@en.
+:Psychotic rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Psychotic"@en.
+:Catatonic rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Catatonic"@en.
+:PeripartumOnset rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Peripartum onset"@en.
+:SeasonalPattern rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Seasonal pattern"@en.
+:MadatorySymptom rdf:type owl:Class, gufo:Category, owl:NamedIndividual;
+    rdfs:label "Madatory Symptom"@en.
+:AdditionalSymptom rdf:type owl:Class, gufo:Category, owl:NamedIndividual;
+    rdfs:label "Additional Symptom\n"@en.
+:DepressedMood rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Depressed Mood"@en.
+:LossOfInterestOrPlesure rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Loss of interest or plesure"@en.
+:Insomnia rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Insomnia"@en.
+:Hypersonmnia rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Hypersonmnia"@en.
+:Fatigue rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Fatigue"@en.
+:LossOfEnergy rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Loss of energy"@en.
+:Indecisiveness rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Indecisiveness"@en.
+:ExcessiveGuilt rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Excessive guilt"@en.
+:Agitation rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Agitation"@en.
+:PsychomotorDelay rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Psychomotor delay"@en.
+:LossOfSelfEsteem rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Loss of self-esteem"@en.
+:IncreasedAppetite rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Increased appetite"@en.
+:SuicidalIdeation rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Suicidal Ideation"@en.
+:ReducedAppetite rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Reduced appetite"@en.
+:DecreasedAbilityToThink rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Decreased ability to think"@en.
+:FeelingsOfWorthlessness rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Feelings of worthlessness"@en.
+:DifficultyConcentrating rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Difficulty concentrating"@en.
+:SignificantWeightLoss rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Significant weight loss"@en.
+:SignificantWeightGain rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Significant weight gain"@en.
+:Treatment rdf:type owl:Class, gufo:Mixin, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Treatment"@en.
+:Prescription rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Relator;
+    rdfs:label "Prescription"@en.
+:Support rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Support"@en.
+:Psychotherapy rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Psychotherapy"@en.
+:Medicine rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Medicine"@en.
+:ElectroconvulsiveTherapy rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Electroconvulsive therapy"@en.
+:Phototherapy rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Phototherapy"@en.
+:CognitiveBehavioralTherapy rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Cognitive Behavioral Therapy"@en.
+:InterpersonalTherapy rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Interpersonal Therapy"@en.
+:OtherTreatment rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "Other treatment"@en.
+:HerbalTreatments rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Herbal Treatments "@en.
+:Psychostimulant rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Psychostimulant"@en.
+:VagusNerveStimulation rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Vagus Nerve Stimulation"@en.
+:DeepBrainStimulation rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Deep brain stimulation"@en.
+:SupportGroups rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Support groups"@en.
+:RepetitiveTranscranialMagneticStimulation rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Repetitive Transcranial Magnetic Stimulation"@en.
+:SelectiveSerotoninReuptakeInhibitors rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Selective serotonin reuptake inhibitors"@en.
+:SerotoninModulators rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Serotonin modulators"@en.
+:SerotoninNorepinephrineReuptakeInhibitors rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Serotonin-norepinephrine reuptake inhibitors"@en.
+:DopamineNorepinephrineReuptakeInhibitors rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Dopamine-norepinephrine reuptake inhibitors"@en.
+:HeterocyclicAntidepressants rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Heterocyclic antidepressants"@en.
+:MonoamineOxidaseInhibitors rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Monoamine oxidase inhibitors"@en.
+:MelatonergicAntidepressant rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Melatonergic antidepressant"@en.
+:KetamineAndEsketamine rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Ketamine and esketamine"@en.
+:Patient rdfs:subClassOf :Person.
+:Psychiatrist rdfs:subClassOf :Person.
+:Adult rdfs:subClassOf :Patient.
+:Teenager rdfs:subClassOf :Patient.
+:SchoolAge rdfs:subClassOf :Patient.
+:PreschoolAge rdfs:subClassOf :Patient.
+:RecurringEpisode rdfs:subClassOf :Course.
+:SingleEpisode rdfs:subClassOf :Course.
+:Mild rdfs:subClassOf :Severity.
+:Moderate rdfs:subClassOf :Severity.
+:Severe rdfs:subClassOf :Severity.
+:DepressiveBaseCondition rdfs:subClassOf :MedicalCondition.
+:MajorDepressiveDisorder rdfs:subClassOf :DepressiveBaseCondition.
+:DepressedMood rdfs:subClassOf :MadatorySymptom.
+:LossOfInterestOrPlesure rdfs:subClassOf :MadatorySymptom.
+:Insomnia rdfs:subClassOf :AdditionalSymptom.
+:Hypersonmnia rdfs:subClassOf :AdditionalSymptom.
+:Fatigue rdfs:subClassOf :AdditionalSymptom.
+:LossOfEnergy rdfs:subClassOf :AdditionalSymptom.
+:Indecisiveness rdfs:subClassOf :AdditionalSymptom.
+:LossOfSelfEsteem rdfs:subClassOf :AdditionalSymptom.
+:ExcessiveGuilt rdfs:subClassOf :AdditionalSymptom.
+:Agitation rdfs:subClassOf :AdditionalSymptom.
+:SuicidalIdeation rdfs:subClassOf :AdditionalSymptom.
+:ReducedAppetite rdfs:subClassOf :AdditionalSymptom.
+:IncreasedAppetite rdfs:subClassOf :AdditionalSymptom.
+:FeelingsOfWorthlessness rdfs:subClassOf :AdditionalSymptom.
+:PsychomotorDelay rdfs:subClassOf :AdditionalSymptom.
+:DecreasedAbilityToThink rdfs:subClassOf :AdditionalSymptom.
+:DifficultyConcentrating rdfs:subClassOf :AdditionalSymptom.
+:SignificantWeightLoss rdfs:subClassOf :AdditionalSymptom.
+:SignificantWeightGain rdfs:subClassOf :AdditionalSymptom.
+:InterpersonalTherapy rdfs:subClassOf :Psychotherapy.
+:CognitiveBehavioralTherapy rdfs:subClassOf :Psychotherapy.
+:Psychotherapy rdfs:subClassOf :Treatment.
+:Support rdfs:subClassOf :Treatment.
+:Phototherapy rdfs:subClassOf :Treatment.
+:ElectroconvulsiveTherapy rdfs:subClassOf :Treatment.
+:Medicine rdfs:subClassOf :Treatment.
+:OtherTreatment rdfs:subClassOf :Treatment.
+:HerbalTreatments rdfs:subClassOf :OtherTreatment.
+:Psychostimulant rdfs:subClassOf :OtherTreatment.
+:VagusNerveStimulation rdfs:subClassOf :OtherTreatment.
+:DeepBrainStimulation rdfs:subClassOf :OtherTreatment.
+:SupportGroups rdfs:subClassOf :OtherTreatment.
+:RepetitiveTranscranialMagneticStimulation rdfs:subClassOf :OtherTreatment.
+:SelectiveSerotoninReuptakeInhibitors rdfs:subClassOf :Medicine.
+:SerotoninModulators rdfs:subClassOf :Medicine.
+:DopamineNorepinephrineReuptakeInhibitors rdfs:subClassOf :Medicine.
+:SerotoninNorepinephrineReuptakeInhibitors rdfs:subClassOf :Medicine.
+:MonoamineOxidaseInhibitors rdfs:subClassOf :Medicine.
+:MelatonergicAntidepressant rdfs:subClassOf :Medicine.
+:HeterocyclicAntidepressants rdfs:subClassOf :Medicine.
+:KetamineAndEsketamine rdfs:subClassOf :Medicine.
+:Psychotic rdfs:subClassOf :Specifiers.
+:AnxiousDistress rdfs:subClassOf :Specifiers.
+:Catatonic rdfs:subClassOf :Specifiers.
+:Melancholic rdfs:subClassOf :Specifiers.
+:MixedFeatures rdfs:subClassOf :Specifiers.
+:Atypical rdfs:subClassOf :Specifiers.
+:PeripartumOnset rdfs:subClassOf :Specifiers.
+:SeasonalPattern rdfs:subClassOf :Specifiers.
+:MadatorySymptom rdfs:subClassOf :DSM5MDDSymptom.
+:AdditionalSymptom rdfs:subClassOf :DSM5MDDSymptom.
+:suffersFrom rdf:type owl:ObjectProperty;
+    rdfs:domain :MedicalCondition;
+    rdfs:range :Patient;
+    rdfs:label "suffers-from"@en;
+    rdf:type gufo:MaterialRelationshipType.
+:Psychiatrist rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:someValuesFrom :MedicalReport
+].
+:MedicalReport rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:someValuesFrom :Psychiatrist
+], [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Patient
+], [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :MedicalCondition
+].
+:DepressiveBaseCondition rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Course
+].
+:Course rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :DepressiveBaseCondition
+].
+:DepressiveBaseCondition rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Severity
+].
+:Severity rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :DepressiveBaseCondition
+].
+:DSM5MDDSymptom rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Patient
+].
+:Patient rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:minQualifiedCardinality "5"^^xsd:nonNegativeInteger;
+  owl:onClass :DSM5MDDSymptom
+].
+:MajorDepressiveDisorder rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:minQualifiedCardinality "5"^^xsd:nonNegativeInteger;
+  owl:onClass :DSM5MDDSymptom
+].
+:DSM5MDDSymptom rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :MajorDepressiveDisorder
+].
+:Specifiers rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:someValuesFrom :MajorDepressiveDisorder
+].
+:MajorDepressiveDisorder rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Specifiers
+].
+:Prescription rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Psychiatrist
+], [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:someValuesFrom :Patient
+].
+:Patient rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Prescription
+].

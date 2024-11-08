@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Ontology Browser</title>
+<meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+<link rel='stylesheet' href='../css/default.css' type='text/css' />
+</head>
+
+<body>
+
+<div id='tabs'>
+<a href='../ontologies/index.html' class='' >Ontologies</a>
+<a href='index.html' class='' >Classes</a>
+<a href='../objectproperties/index.html' class='' >Object Properties</a>
+Data Properties
+<a href='../annotationproperties/index.html' class='' >Annotation Properties</a>
+<a href='../individuals/index.html' class='' >Individuals</a>
+<a href='../datatypes/index.html' class='' >Datatypes</a>
+<a href='../cloud/' class='' >Clouds</a>
+</div> <!-- tabs -->
+
+
+<div class='summary'><h2>Class: Patient</h2>
+
+<div id='annotations_(1)'>
+<h4>Annotations (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../annotationproperties/label___653429740.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> <span class='literal'>"Patient"</span> <span style='color: black;'>@en</span></li>
+</ul>
+</div>
+</div><!-- annotations (1) -->
+
+
+<div id='superclasses_(3)'>
+<h4>Superclasses (3)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="Person___-1869894616.html" class='Class' title="http://www.semanticweb.org/rayan/ontologies/2024/9/mdd_ontology#Person">Person</a></li>
+<li class="asserted"><a href="../objectproperties/inheresIn___-671409503.html" class='Object Property' title="http://purl.org/nemo/gufo#inheresIn">inheresIn</a> <span class='min'>min</span> 5 <a href="DSM5MDDSymptom___-388480474.html" class='Class' title="http://www.semanticweb.org/rayan/ontologies/2024/9/mdd_ontology#DSM5MDDSymptom">DSM5MDDSymptom</a></li>
+<li class="asserted"><a href="../objectproperties/mediates___-14664164.html" class='Object Property' title="http://purl.org/nemo/gufo#mediates">mediates</a> <span class='min'>min</span> 1 <a href="Prescription___662576365.html" class='Class' title="http://www.semanticweb.org/rayan/ontologies/2024/9/mdd_ontology#Prescription">Prescription</a></li>
+</ul>
+</div>
+</div><!-- superclasses (3) -->
+
+
+<div id='usage_(4)'>
+<h4>Usage (4)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="DSM5MDDSymptom___-388480474.html" class='Class' title="http://www.semanticweb.org/rayan/ontologies/2024/9/mdd_ontology#DSM5MDDSymptom">DSM5MDDSymptom</a> <span class='keyword'>&sube;</span> <span class='keyword'>InverseOf</span> <a href="../objectproperties/inheresIn___-671409503.html" class='Object Property' title="http://purl.org/nemo/gufo#inheresIn">inheresIn</a> <span class='exactly'>exactly</span> 1 <span class='Class active-entity'>Patient</span></li>
+<li class="asserted"><a href="MedicalReport___-1177370696.html" class='Class' title="http://www.semanticweb.org/rayan/ontologies/2024/9/mdd_ontology#MedicalReport">MedicalReport</a> <span class='keyword'>&sube;</span> <a href="../objectproperties/mediates___-14664164.html" class='Object Property' title="http://purl.org/nemo/gufo#mediates">mediates</a> <span class='min'>min</span> 1 <span class='Class active-entity'>Patient</span></li>
+<li class="asserted"><a href="Prescription___662576365.html" class='Class' title="http://www.semanticweb.org/rayan/ontologies/2024/9/mdd_ontology#Prescription">Prescription</a> <span class='keyword'>&sube;</span> <span class='keyword'>InverseOf</span> <a href="../objectproperties/mediates___-14664164.html" class='Object Property' title="http://purl.org/nemo/gufo#mediates">mediates</a> <span class='some'>some</span> <span class='Class active-entity'>Patient</span></li>
+<li class="asserted"><a href="../objectproperties/suffersFrom___-1453313535.html" class='Object Property' title="http://www.semanticweb.org/rayan/ontologies/2024/9/mdd_ontology#suffersFrom">suffersFrom</a> <span class='keyword'>Range</span> <span class='Class active-entity'>Patient</span></li>
+</ul>
+</div>
+</div><!-- usage (4) -->
+
+</div> <!-- summary -->
+<p class='footer'>
+<a href='http://code.google.com/p/ontology-browser/' target='_blank'>OWL HTML inside</a>
+</p>
+</body>
+</html>
