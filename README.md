@@ -27,7 +27,8 @@ The ontology was developed using the OWL language (Web Ontology Language).
 
 - What are the main symptoms for the diagnosis of Major Depressive Disorder?
 - What are the diagnostic criteria for Major Depressive Disorder?
-- What treatments are performed on patients with Major Depressive Disorder? 
+- What treatments are performed on patients with Major Depressive Disorder?
+- How does the severity of MDD affect treatment choice?
 
 ## OntoUML View
 
