@@ -23,6 +23,12 @@ The ontology was developed using the OWL language (Web Ontology Language).
 3. Develop chatbots or mental health assistants that can understand and answer questions about major depressive disorder.
 4. Facilitate mental health research by enabling knowledge extraction from large volumes of clinical data.
 
+## Competency Question
+
+- What are the main symptoms for the diagnosis of Major Depressive Disorder?
+- What are the diagnostic criteria for Major Depressive Disorder?
+- What treatments are performed on patients with Major Depressive Disorder? 
+
 ## OntoUML View
 
 ### Diagnosis
