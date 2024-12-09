@@ -1,4 +1,6 @@
-<h1 align="center">MDD Ontology</h1>
+<h1 align="center">Major Depressive Disorder Ontology</h1>
+
+
 
 ## Purpose
 Provide a formal structure to represent knowledge about major depressive disorder, its diagnosis, symptoms and treatments.
@@ -42,3 +44,10 @@ The ontology was developed using the OWL language (Web Ontology Language).
 ### Treatment
 
 <img  src='./images/Treatment.jpg'/>
+
+
+
+## Sources
+
+[MSD Manuals](https://www.msdmanuals.com/pt/profissional/transtornos-psiqui%C3%A1tricos/transtornos-do-humor/transtornos-depressivos)
+[Manual Diagnóstico e Estatístico de Transtornos Mentais (DSM-5)](http://www.institutopebioetica.com.br/documentos/manual-diagnostico-e-estatistico-de-transtornos-mentais-dsm-5.pdf)
