@@ -38,7 +38,7 @@ The ontology was developed using the OWL language (Web Ontology Language).
 
 ### Symptoms
 
-<img  src='./images/Symptoms.jpg'/>
+<img  src='./images/Symptom.jpg'/>
 
 ### Treatment
 
