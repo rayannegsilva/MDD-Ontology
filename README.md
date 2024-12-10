@@ -45,7 +45,6 @@ The ontology was developed using the OWL language (Web Ontology Language).
 <img  src='./source/Treatment.jpg'/>
 
 
-
 ## Sources
 
 - [MSD Manuals](https://www.msdmanuals.com/pt/profissional/transtornos-psiqui%C3%A1tricos/transtornos-do-humor/transtornos-depressivos)
