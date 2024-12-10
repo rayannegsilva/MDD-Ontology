@@ -34,15 +34,15 @@ The ontology was developed using the OWL language (Web Ontology Language).
 
 ### Diagnosis
 
-<img  src='./source/Diagnostic.jpg'/>
+<img  src='./images/Diagnostic.jpg'/>
 
 ### Symptoms
 
-<img  src='./source/Symptom.jpg'/>
+<img  src='./images/Symptom.jpg'/>
 
 ### Treatment
 
-<img  src='./source/Treatment.jpg'/>
+<img  src='./images/Treatment.jpg'/>
 
 
 ## Sources
