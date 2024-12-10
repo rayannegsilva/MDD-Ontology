@@ -1,0 +1,1813 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://mddontology#"
+     xml:base="http://mddontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:gufo="http://purl.org/nemo/gufo#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://ontology/2024/majordepressive">
+        <owl:imports rdf:resource="http://purl.org/nemo/gufo#"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontology/2024/majordepressive#componentOf -->
+
+    <owl:ObjectProperty rdf:about="http://ontology/2024/majordepressive#componentOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://ontology/2024/majordepressive#SymptonCriteria"/>
+        <rdfs:range rdf:resource="http://ontology/2024/majordepressive#AdditionalSymptom"/>
+        <rdfs:range rdf:resource="http://ontology/2024/majordepressive#MandatorySymptom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#diagnosticFeature -->
+
+    <owl:ObjectProperty rdf:about="http://ontology/2024/majordepressive#diagnosticFeature">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ontology/2024/majordepressive#MajorDepressiveDisorder"/>
+        <rdfs:range rdf:resource="http://ontology/2024/majordepressive#SymptonCriteria"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#influencedBy -->
+
+    <owl:ObjectProperty rdf:about="http://ontology/2024/majordepressive#influencedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology/2024/majordepressive#influencedBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://ontology/2024/majordepressive#Patient"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology/2024/majordepressive#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://ontology/2024/majordepressive#RiskFactor"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#suffersFrom -->
+
+    <owl:ObjectProperty rdf:about="http://ontology/2024/majordepressive#suffersFrom">
+        <rdfs:domain rdf:resource="http://ontology/2024/majordepressive#MedicalCondition"/>
+        <rdfs:range rdf:resource="http://ontology/2024/majordepressive#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#externallyDependsOn -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/nemo/gufo#externallyDependsOn"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#inheresIn -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/nemo/gufo#inheresIn"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#mediates -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/nemo/gufo#mediates"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontology/2024/majordepressive#AdditionalSymptom -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#AdditionalSymptom">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#AnxiousDistress -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#AnxiousDistress">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Specifiers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Atypical -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#Atypical">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Specifiers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#AtypicalAntidepressants -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#AtypicalAntidepressants">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Pharmacological"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Catatinic -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#Catatinic">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Specifiers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#CognitiveBehavioralTherapy -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#CognitiveBehavioralTherapy">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Psychotherapeutic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#ContextualFactor -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#ContextualFactor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/nemo/gufo#externallyDependsOn"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://ontology/2024/majordepressive#MedicalCondition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/nemo/gufo#inheresIn"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://ontology/2024/majordepressive#Patient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Course -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#Course">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://ontology/2024/majordepressive#RecurringEpisode"/>
+                    <rdf:Description rdf:about="http://ontology/2024/majordepressive#SingleEpisode"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#IntrinsicMode"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/nemo/gufo#externallyDependsOn"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://ontology/2024/majordepressive#MajorDepressiveDisorder"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/nemo/gufo#inheresIn"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://ontology/2024/majordepressive#MajorDepressiveDisorder"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#DeepBrainStimulation -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#DeepBrainStimulation">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#OtherTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#DepressedMood -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#DepressedMood">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#MandatorySymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#DiminishedAbilityToThinkConcentrateOrIndecisiveness -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#DiminishedAbilityToThinkConcentrateOrIndecisiveness">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#AdditionalSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#ElectroconvulsiveTherapy -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#ElectroconvulsiveTherapy">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#EmotionallyDistressingEvent -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#EmotionallyDistressingEvent">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#RiskFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#FamilyTendency -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#FamilyTendency">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#RiskFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#FatigueOrLossOfEnergy -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#FatigueOrLossOfEnergy">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#AdditionalSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#FeelingsOfWorthlessnessOrExcessiveOrInappropriateGuilt -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#FeelingsOfWorthlessnessOrExcessiveOrInappropriateGuilt">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#AdditionalSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#FemaleSex -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#FemaleSex">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#RiskFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#GeneralMedicalDisorder -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#GeneralMedicalDisorder">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#RiskFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#HealthcareProfessional -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#HealthcareProfessional">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/nemo/gufo#mediates"/>
+                <owl:someValuesFrom rdf:resource="http://ontology/2024/majordepressive#MedicalReport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#HerbalTreatment -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#HerbalTreatment">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#OtherTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#High -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#High">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Severity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#InsomniaOrHypersomnia -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#InsomniaOrHypersomnia">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#AdditionalSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#LossOfInterestOrPleasure -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#LossOfInterestOrPleasure">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#MandatorySymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Low -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#Low">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Severity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#MAOIs -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#MAOIs">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Pharmacological"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#MajorDepressiveDisorder -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#MajorDepressiveDisorder">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#MedicalCondition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/nemo/gufo#inheresIn"/>
+                <owl:someValuesFrom rdf:resource="http://ontology/2024/majordepressive#Specifiers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/nemo/gufo#inheresIn"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://ontology/2024/majordepressive#SymptonCriteria"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/nemo/gufo#externallyDependsOn"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://ontology/2024/majordepressive#Course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/nemo/gufo#inheresIn"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://ontology/2024/majordepressive#Course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/nemo/gufo#inheresIn"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://ontology/2024/majordepressive#Severity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#MandatorySymptom -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#MandatorySymptom">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#MedicalComorbidity -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#MedicalComorbidity">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#ContextualFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#MedicalCondition -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#MedicalCondition">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#FunctionalComplex"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/nemo/gufo#externallyDependsOn"/>
+                <owl:someValuesFrom rdf:resource="http://ontology/2024/majordepressive#ContextualFactor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/nemo/gufo#mediates"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://ontology/2024/majordepressive#MedicalReport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#MedicalReport -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#MedicalReport">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Relator"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/nemo/gufo#mediates"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://ontology/2024/majordepressive#HealthcareProfessional"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#MedicationSideEffect -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#MedicationSideEffect">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#RiskFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Melancholic -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#Melancholic">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Specifiers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#MixedFeatures -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#MixedFeatures">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Specifiers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Moderate -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#Moderate">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Severity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#OtherTreatment -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#OtherTreatment">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Patient -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#Patient">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/nemo/gufo#inheresIn"/>
+                <owl:someValuesFrom rdf:resource="http://ontology/2024/majordepressive#ContextualFactor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/nemo/gufo#inheresIn"/>
+                <owl:someValuesFrom rdf:resource="http://ontology/2024/majordepressive#RiskFactor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/nemo/gufo#mediates"/>
+                <owl:someValuesFrom rdf:resource="http://ontology/2024/majordepressive#Prescription"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/nemo/gufo#inheresIn"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://ontology/2024/majordepressive#SymptonCriteria"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/nemo/gufo#mediates"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://ontology/2024/majordepressive#MedicalReport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#PeripartumOnset -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#PeripartumOnset">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Specifiers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Person -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#Person">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#FunctionalComplex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Pharmacological -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#Pharmacological">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Phototherapy -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#Phototherapy">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Prescription -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#Prescription">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Relator"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/nemo/gufo#mediates"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://ontology/2024/majordepressive#HealthcareProfessional"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/nemo/gufo#mediates"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://ontology/2024/majordepressive#Patient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#PsychiatricComorbidity -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#PsychiatricComorbidity">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#ContextualFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#PsychodynamicTherapy -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#PsychodynamicTherapy">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Psychotherapeutic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#PsychomotorAgitationOrDelay -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#PsychomotorAgitationOrDelay">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#AdditionalSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#PsychosocialStressor -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#PsychosocialStressor">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#ContextualFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Psychostimulant -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#Psychostimulant">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#OtherTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Psychotherapeutic -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#Psychotherapeutic">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Psychotic -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#Psychotic">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Specifiers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#RecurringEpisode -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#RecurringEpisode">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#RepetitiveTranscranialMagneticStimulation -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#RepetitiveTranscranialMagneticStimulation">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#OtherTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#RiskFactor -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#RiskFactor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/nemo/gufo#inheresIn"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://ontology/2024/majordepressive#Patient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#SNRIs -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#SNRIs">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Pharmacological"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#SSRIs -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#SSRIs">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Pharmacological"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#SeasonalPattern -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#SeasonalPattern">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Specifiers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Severity -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#Severity">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://ontology/2024/majordepressive#High"/>
+                    <rdf:Description rdf:about="http://ontology/2024/majordepressive#Low"/>
+                    <rdf:Description rdf:about="http://ontology/2024/majordepressive#Moderate"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#IntrinsicMode"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/nemo/gufo#inheresIn"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://ontology/2024/majordepressive#MajorDepressiveDisorder"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#SignificantWeightLossOrGain -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#SignificantWeightLossOrGain">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#AdditionalSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#SingleEpisode -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#SingleEpisode">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Specifiers -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#Specifiers">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/nemo/gufo#inheresIn"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://ontology/2024/majordepressive#MajorDepressiveDisorder"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#SuicidalIdeation -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#SuicidalIdeation">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#AdditionalSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Support -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#Support">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#SupportGroups -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#SupportGroups">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#OtherTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Symptom -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#Symptom">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#FunctionalComplex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#SymptonCriteria -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#SymptonCriteria">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#FunctionalComplex"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology/2024/majordepressive#componentOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://ontology/2024/majordepressive#MandatorySymptom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology/2024/majordepressive#componentOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://ontology/2024/majordepressive#AdditionalSymptom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/nemo/gufo#inheresIn"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://ontology/2024/majordepressive#MajorDepressiveDisorder"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.org/nemo/gufo#inheresIn"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://ontology/2024/majordepressive#Patient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#TCAs -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#TCAs">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Pharmacological"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#TerapiaInterpessoal -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#TerapiaInterpessoal">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#Psychotherapeutic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Treatment -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#Treatment">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#FunctionalComplex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#VagusNerveStimulation -->
+
+    <owl:Class rdf:about="http://ontology/2024/majordepressive#VagusNerveStimulation">
+        <rdfs:subClassOf rdf:resource="http://ontology/2024/majordepressive#OtherTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Category -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Category"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#FunctionalComplex -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#FunctionalComplex"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#IntrinsicMode -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#IntrinsicMode"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Kind -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Kind"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#MaterialRelationshipType -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#MaterialRelationshipType"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Mixin -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Mixin"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Quality -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Quality"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Relator -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Relator"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#Role -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#Role"/>
+    
+
+
+    <!-- http://purl.org/nemo/gufo#SubKind -->
+
+    <owl:Class rdf:about="http://purl.org/nemo/gufo#SubKind"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontology/2024/majordepressive#AdditionalSymptom -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#AdditionalSymptom">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#AnxiousDistress -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#AnxiousDistress">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Atypical -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#Atypical">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#AtypicalAntidepressants -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#AtypicalAntidepressants">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Catatinic -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#Catatinic">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#CognitiveBehavioralTherapy -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#CognitiveBehavioralTherapy">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#ContextualFactor -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#ContextualFactor">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Course -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#Course">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#DeepBrainStimulation -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#DeepBrainStimulation">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#DepressedMood -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#DepressedMood">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#DiminishedAbilityToThinkConcentrateOrIndecisiveness -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#DiminishedAbilityToThinkConcentrateOrIndecisiveness">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#ElectroconvulsiveTherapy -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#ElectroconvulsiveTherapy">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#EmotionallyDistressingEvent -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#EmotionallyDistressingEvent">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#FamilyTendency -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#FamilyTendency">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#FatigueOrLossOfEnergy -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#FatigueOrLossOfEnergy">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#FeelingsOfWorthlessnessOrExcessiveOrInappropriateGuilt -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#FeelingsOfWorthlessnessOrExcessiveOrInappropriateGuilt">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#FemaleSex -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#FemaleSex">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#GeneralMedicalDisorder -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#GeneralMedicalDisorder">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#HealthcareProfessional -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#HealthcareProfessional">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#HerbalTreatment -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#HerbalTreatment">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#High -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#High">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#InsomniaOrHypersomnia -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#InsomniaOrHypersomnia">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#LossOfInterestOrPleasure -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#LossOfInterestOrPleasure">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Low -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#Low">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#MAOIs -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#MAOIs">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#MajorDepressiveDisorder -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#MajorDepressiveDisorder">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#MandatorySymptom -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#MandatorySymptom">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#MedicalComorbidity -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#MedicalComorbidity">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#MedicalCondition -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#MedicalCondition">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Mixin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#MedicalReport -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#MedicalReport">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#MedicationSideEffect -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#MedicationSideEffect">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Melancholic -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#Melancholic">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#MixedFeatures -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#MixedFeatures">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Moderate -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#Moderate">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#OtherTreatment -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#OtherTreatment">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Patient -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#Patient">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#PeripartumOnset -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#PeripartumOnset">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Person -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#Person">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Pharmacological -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#Pharmacological">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Phototherapy -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#Phototherapy">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Prescription -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#Prescription">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#PsychiatricComorbidity -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#PsychiatricComorbidity">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#PsychodynamicTherapy -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#PsychodynamicTherapy">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#PsychomotorAgitationOrDelay -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#PsychomotorAgitationOrDelay">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#PsychosocialStressor -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#PsychosocialStressor">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Psychostimulant -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#Psychostimulant">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Psychotherapeutic -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#Psychotherapeutic">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Psychotic -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#Psychotic">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#RecurringEpisode -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#RecurringEpisode">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#RepetitiveTranscranialMagneticStimulation -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#RepetitiveTranscranialMagneticStimulation">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#RiskFactor -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#RiskFactor">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#SNRIs -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#SNRIs">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#SSRIs -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#SSRIs">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#SeasonalPattern -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#SeasonalPattern">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Severity -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#Severity">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#SignificantWeightLossOrGain -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#SignificantWeightLossOrGain">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#SingleEpisode -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#SingleEpisode">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Specifiers -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#Specifiers">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#SuicidalIdeation -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#SuicidalIdeation">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Support -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#Support">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Kind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#SupportGroups -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#SupportGroups">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Symptom -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#Symptom">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Mixin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#SymptonCriteria -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#SymptonCriteria">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#TCAs -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#TCAs">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#TerapiaInterpessoal -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#TerapiaInterpessoal">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#Treatment -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#Treatment">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#VagusNerveStimulation -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#VagusNerveStimulation">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#SubKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology/2024/majordepressive#suffersFrom -->
+
+    <owl:NamedIndividual rdf:about="http://ontology/2024/majordepressive#suffersFrom">
+        <rdf:type rdf:resource="http://purl.org/nemo/gufo#MaterialRelationshipType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#AdditionalSymptom">
+        <rdfs:label xml:lang="en">Additional Symptom</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#AnxiousDistress">
+        <rdfs:label xml:lang="en">Anxious distress</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#Atypical">
+        <rdfs:label xml:lang="en">Atypical</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#AtypicalAntidepressants">
+        <rdfs:label xml:lang="en">Atypical Antidepressants</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#Catatinic">
+        <rdfs:label xml:lang="en">Catatinic</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#CognitiveBehavioralTherapy">
+        <rdfs:label xml:lang="en">Cognitive Behavioral Therapy</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#ContextualFactor">
+        <rdfs:label xml:lang="en">Contextual Factor</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#Course">
+        <rdfs:label xml:lang="en">Course</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#DeepBrainStimulation">
+        <rdfs:label xml:lang="en">Deep brain stimulation</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#DepressedMood">
+        <rdfs:label xml:lang="en">Depressed mood</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#DiminishedAbilityToThinkConcentrateOrIndecisiveness">
+        <rdfs:label xml:lang="en">Diminished ability to think, concentrate, or indecisiveness</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#ElectroconvulsiveTherapy">
+        <rdfs:label xml:lang="en">Electroconvulsive Therapy</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#EmotionallyDistressingEvent">
+        <rdfs:label xml:lang="en">Emotionally Distressing Event</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#FamilyTendency">
+        <rdfs:label xml:lang="en">Family Tendency</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#FatigueOrLossOfEnergy">
+        <rdfs:label xml:lang="en">Fatigue or loss of energy</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#FeelingsOfWorthlessnessOrExcessiveOrInappropriateGuilt">
+        <rdfs:label xml:lang="en">Feelings of worthlessness or excessive or inappropriate guilt</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#FemaleSex">
+        <rdfs:label xml:lang="en">Female Sex</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#GeneralMedicalDisorder">
+        <rdfs:label xml:lang="en">General Medical Disorder</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#HealthcareProfessional">
+        <rdfs:label xml:lang="en">Healthcare Professional</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#HerbalTreatment">
+        <rdfs:label xml:lang="en">Herbal treatment</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#High">
+        <rdfs:label xml:lang="en">High</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#InsomniaOrHypersomnia">
+        <rdfs:label xml:lang="en">Insomnia or hypersomnia</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#LossOfInterestOrPleasure">
+        <rdfs:label xml:lang="en">Loss of interest or pleasure</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#Low">
+        <rdfs:label xml:lang="en">Low</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#MAOIs">
+        <rdfs:label xml:lang="en">MAOIs</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#MajorDepressiveDisorder">
+        <rdfs:label xml:lang="en"> Major Depressive Disorder</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#MandatorySymptom">
+        <rdfs:label xml:lang="en">Mandatory symptom</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#MedicalComorbidity">
+        <rdfs:label xml:lang="en">Medical Comorbidity</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#MedicalCondition">
+        <rdfs:label xml:lang="en">Medical Condition</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#MedicalReport">
+        <rdfs:label xml:lang="en">Medical Report</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#MedicationSideEffect">
+        <rdfs:label xml:lang="en">Medication Side Effect</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#Melancholic">
+        <rdfs:label xml:lang="en">Melancholic</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#MixedFeatures">
+        <rdfs:label xml:lang="en">Mixed features</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#Moderate">
+        <rdfs:label xml:lang="en">Moderate</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#OtherTreatment">
+        <rdfs:label xml:lang="en">Other treatment</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#Patient">
+        <rdfs:label xml:lang="en">Patient</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#PeripartumOnset">
+        <rdfs:label xml:lang="en">Peripartum onset</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#Person">
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#Pharmacological">
+        <rdfs:label xml:lang="en">Pharmacological</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#Phototherapy">
+        <rdfs:label xml:lang="en">Phototherapy</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#Prescription">
+        <rdfs:label xml:lang="en">Prescription</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#PsychiatricComorbidity">
+        <rdfs:label xml:lang="en">Psychiatric Comorbidity</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#PsychodynamicTherapy">
+        <rdfs:label xml:lang="en">Psychodynamic Therapy</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#PsychomotorAgitationOrDelay">
+        <rdfs:label xml:lang="en">Psychomotor agitation or delay</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#PsychosocialStressor">
+        <rdfs:label xml:lang="en">Psychosocial Stressor</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#Psychostimulant">
+        <rdfs:label xml:lang="en">Psychostimulant</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#Psychotherapeutic">
+        <rdfs:label xml:lang="en">Psychotherapeutic</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#Psychotic">
+        <rdfs:label xml:lang="en">Psychotic</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#RecurringEpisode">
+        <rdfs:label xml:lang="en">Recurring episode</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#RepetitiveTranscranialMagneticStimulation">
+        <rdfs:label xml:lang="en">Repetitive transcranial magnetic stimulation</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#RiskFactor">
+        <rdfs:label xml:lang="en">Risk Factor</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#SNRIs">
+        <rdfs:label xml:lang="en">SNRIs</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#SSRIs">
+        <rdfs:label xml:lang="en">SSRIs</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#SeasonalPattern">
+        <rdfs:label xml:lang="en">Seasonal pattern</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#Severity">
+        <rdfs:label xml:lang="en">Severity</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#SignificantWeightLossOrGain">
+        <rdfs:label xml:lang="en">Significant weight loss or gain</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#SingleEpisode">
+        <rdfs:label xml:lang="en">Single episode</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#Specifiers">
+        <rdfs:label xml:lang="en">Specifiers</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#SuicidalIdeation">
+        <rdfs:label xml:lang="en">Suicidal ideation</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#Support">
+        <rdfs:label xml:lang="en">Support</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#SupportGroups">
+        <rdfs:label xml:lang="en">Support groups</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#Symptom">
+        <rdfs:label xml:lang="en">Symptom</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#SymptonCriteria">
+        <rdfs:label xml:lang="en">Sympton Criteria</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#TCAs">
+        <rdfs:label xml:lang="en">TCAs</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#TerapiaInterpessoal">
+        <rdfs:label xml:lang="en">Terapia Interpessoal</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#Treatment">
+        <rdfs:label xml:lang="en">Treatment</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#VagusNerveStimulation">
+        <rdfs:label xml:lang="en">Vagus Nerve Stimulation</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology/2024/majordepressive#suffersFrom">
+        <rdfs:label xml:lang="en">suffersFrom</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#AnxiousDistress"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#Atypical"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#Catatinic"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#Melancholic"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#MixedFeatures"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#PeripartumOnset"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#Psychotic"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#SeasonalPattern"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#AtypicalAntidepressants"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#MAOIs"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#SNRIs"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#SSRIs"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#TCAs"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#CognitiveBehavioralTherapy"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#PsychodynamicTherapy"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#TerapiaInterpessoal"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#DeepBrainStimulation"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#HerbalTreatment"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#Psychostimulant"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#RepetitiveTranscranialMagneticStimulation"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#SupportGroups"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#VagusNerveStimulation"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#ElectroconvulsiveTherapy"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#OtherTreatment"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#Pharmacological"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#Phototherapy"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#Psychotherapeutic"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#Support"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#EmotionallyDistressingEvent"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#FamilyTendency"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#FemaleSex"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#GeneralMedicalDisorder"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#MedicationSideEffect"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#MedicalComorbidity"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#PsychiatricComorbidity"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#PsychosocialStressor"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#diagnosticFeature"/>
+            <rdf:Description rdf:about="http://ontology/2024/majordepressive#suffersFrom"/>
+            <rdf:Description rdf:about="http://purl.org/nemo/gufo#externallyDependsOn"/>
+            <rdf:Description rdf:about="http://purl.org/nemo/gufo#inheresIn"/>
+            <rdf:Description rdf:about="http://purl.org/nemo/gufo#mediates"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
