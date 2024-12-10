@@ -32,18 +32,6 @@ The ontology was developed using the OWL language (Web Ontology Language).
 
 ## OntoUML View
 
-### Diagnosis
-
-<img  src='./images/Diagnostic.jpg'/>
-
-### Symptoms
-
-<img  src='./images/Symptom.jpg'/>
-
-### Treatment
-
-<img  src='./images/Treatment.jpg'/>
-
 
 
 ## Sources
