@@ -1,0 +1,1480 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://2024/mdd/ontology/final"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://2024/mdd/ontology/final">
+    <Prefix name="" IRI="http://2024/mdd/ontology/teste#"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="gufo" IRI="http://purl.org/nemo/gufo#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Import>http://purl.org/nemo/gufo#</Import>
+    <Declaration>
+        <Class abbreviatedIRI=":AdditionalSymptom"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":AnxiousDistress"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Atypical"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":AtypicalAntidepressants"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Catatonic"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":CognitiveBehavialTherapy"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":ContextualFactor"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Course"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":DeepBrainStimulation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":DepressedMood"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Diagnosis"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":DiminishedAbilityToThinkConcentrateOrIndecisiveness"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":ElectroconvulsiveTherapy"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":EmotionallyDistressingEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":FamilyTendency"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":FatigueOrLossOfEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":FeelingsOfWorthlessnessOrExcessiveOrInappropriateGuilt"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":FemaleSex"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":GeneralMedicalDisorder"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":HealthcareProfessional"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Herbal"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":High"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":InsomniaOrHypersonmnia"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":InterpersonalTherapy"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":LossOfInterestOrPleasure"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Low"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":MAOIs"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":MajorDepressiveDisorder"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":MandatorySymptom"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":MedicalComorbidity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":MedicalCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":MedicationSideEffect"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Melancholic"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":MixedFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Moderate"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":OtherTreatment"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Patient"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":PeripartumOnset"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Person"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Pharmacological"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Phototherapy"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Prescription"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":PsychiatricComorbidity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":PsychodynamicTherapy"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":PsychomotorAgitationOrDelay"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":PsychosocialStressor"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Psychostimulant"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Psychotherapeutic"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Psychotic"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":RecurringEpisode"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":RiskFactor"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":SNRIs"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":SSRIs"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":SeasonalPattern"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Severity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":SignificantWeightLossOrGain"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":SingleEpisode"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Specifier"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":SuicidalIdeation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Suport"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":SupportGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Symptom"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":SymptomCriteria"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":TCAs"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Treatment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":suffersFrom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":AdditionalSymptom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":AnxiousDistress"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Atypical"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":AtypicalAntidepressants"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Catatonic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":CognitiveBehavialTherapy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":ContextualFactor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Course"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":DeepBrainStimulation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":DepressedMood"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Diagnosis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":DiminishedAbilityToThinkConcentrateOrIndecisiveness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":ElectroconvulsiveTherapy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":EmotionallyDistressingEvent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":FamilyTendency"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":FatigueOrLossOfEnergy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":FeelingsOfWorthlessnessOrExcessiveOrInappropriateGuilt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":FemaleSex"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":GeneralMedicalDisorder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":HealthcareProfessional"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Herbal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":High"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":InsomniaOrHypersonmnia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":InterpersonalTherapy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":LossOfInterestOrPleasure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Low"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":MAOIs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":MajorDepressiveDisorder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":MandatorySymptom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":MedicalComorbidity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":MedicalCondition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":MedicationSideEffect"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Melancholic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":MixedFeature"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Moderate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":OtherTreatment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Patient"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":PeripartumOnset"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Person"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Pharmacological"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Phototherapy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Prescription"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":PsychiatricComorbidity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":PsychodynamicTherapy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":PsychomotorAgitationOrDelay"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":PsychosocialStressor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Psychostimulant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Psychotherapeutic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Psychotic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":RecurringEpisode"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":RiskFactor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":SNRIs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":SSRIs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":SeasonalPattern"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Severity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":SignificantWeightLossOrGain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":SingleEpisode"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Specifier"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":SuicidalIdeation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Suport"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":SupportGroup"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Symptom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":SymptomCriteria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":TCAs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Treatment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":suffersFrom"/>
+    </Declaration>
+    <SubClassOf>
+        <Class abbreviatedIRI=":AdditionalSymptom"/>
+        <Class abbreviatedIRI=":Symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":AnxiousDistress"/>
+        <Class abbreviatedIRI=":Specifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Atypical"/>
+        <Class abbreviatedIRI=":Specifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":AtypicalAntidepressants"/>
+        <Class abbreviatedIRI=":Pharmacological"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Catatonic"/>
+        <Class abbreviatedIRI=":Specifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":CognitiveBehavialTherapy"/>
+        <Class abbreviatedIRI=":Psychotherapeutic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":ContextualFactor"/>
+        <Class abbreviatedIRI="gufo:Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":ContextualFactor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gufo:externallyDependsOn"/>
+            <Class abbreviatedIRI=":MedicalCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":ContextualFactor"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class abbreviatedIRI=":Patient"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Course"/>
+        <Class abbreviatedIRI="gufo:IntrinsicMode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Course"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gufo:externallyDependsOn"/>
+            <Class abbreviatedIRI=":MajorDepressiveDisorder"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Course"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class abbreviatedIRI=":MajorDepressiveDisorder"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":DeepBrainStimulation"/>
+        <Class abbreviatedIRI=":OtherTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":DepressedMood"/>
+        <Class abbreviatedIRI=":MandatorySymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Diagnosis"/>
+        <Class abbreviatedIRI="gufo:Relator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Diagnosis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            <Class abbreviatedIRI=":HealthcareProfessional"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Diagnosis"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            <Class abbreviatedIRI=":MedicalCondition"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Diagnosis"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            <Class abbreviatedIRI=":Patient"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":DiminishedAbilityToThinkConcentrateOrIndecisiveness"/>
+        <Class abbreviatedIRI=":AdditionalSymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":ElectroconvulsiveTherapy"/>
+        <Class abbreviatedIRI=":Treatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":EmotionallyDistressingEvent"/>
+        <Class abbreviatedIRI=":RiskFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":FamilyTendency"/>
+        <Class abbreviatedIRI=":RiskFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":FatigueOrLossOfEnergy"/>
+        <Class abbreviatedIRI=":AdditionalSymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":FeelingsOfWorthlessnessOrExcessiveOrInappropriateGuilt"/>
+        <Class abbreviatedIRI=":AdditionalSymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":FemaleSex"/>
+        <Class abbreviatedIRI=":RiskFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":GeneralMedicalDisorder"/>
+        <Class abbreviatedIRI=":RiskFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":HealthcareProfessional"/>
+        <Class abbreviatedIRI=":Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":HealthcareProfessional"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            <Class abbreviatedIRI=":Prescription"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":HealthcareProfessional"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            </ObjectInverseOf>
+            <Class abbreviatedIRI=":Diagnosis"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Herbal"/>
+        <Class abbreviatedIRI=":OtherTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":High"/>
+        <Class abbreviatedIRI=":Severity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":InsomniaOrHypersonmnia"/>
+        <Class abbreviatedIRI=":AdditionalSymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":InterpersonalTherapy"/>
+        <Class abbreviatedIRI=":Psychotherapeutic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":LossOfInterestOrPleasure"/>
+        <Class abbreviatedIRI=":MandatorySymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Low"/>
+        <Class abbreviatedIRI=":Severity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":MAOIs"/>
+        <Class abbreviatedIRI=":Pharmacological"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":MajorDepressiveDisorder"/>
+        <Class abbreviatedIRI=":MedicalCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":MajorDepressiveDisorder"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class abbreviatedIRI=":Severity"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":MajorDepressiveDisorder"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class abbreviatedIRI=":Specifier"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":MajorDepressiveDisorder"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:externallyDependsOn"/>
+            </ObjectInverseOf>
+            <Class abbreviatedIRI=":Course"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":MajorDepressiveDisorder"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            </ObjectInverseOf>
+            <Class abbreviatedIRI=":Course"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":MajorDepressiveDisorder"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            </ObjectInverseOf>
+            <Class abbreviatedIRI=":SymptomCriteria"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":MandatorySymptom"/>
+        <Class abbreviatedIRI=":Symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":MedicalComorbidity"/>
+        <Class abbreviatedIRI=":ContextualFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":MedicalCondition"/>
+        <Class abbreviatedIRI="gufo:FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":MedicalCondition"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            </ObjectInverseOf>
+            <Class abbreviatedIRI=":Diagnosis"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":MedicationSideEffect"/>
+        <Class abbreviatedIRI=":RiskFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Melancholic"/>
+        <Class abbreviatedIRI=":Specifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":MixedFeature"/>
+        <Class abbreviatedIRI=":Specifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Moderate"/>
+        <Class abbreviatedIRI=":Severity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":OtherTreatment"/>
+        <Class abbreviatedIRI=":Treatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Patient"/>
+        <Class abbreviatedIRI=":Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Patient"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            </ObjectInverseOf>
+            <Class abbreviatedIRI=":Diagnosis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Patient"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class abbreviatedIRI=":SymptomCriteria"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Patient"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            <Class abbreviatedIRI=":Prescription"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Patient"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            </ObjectInverseOf>
+            <Class abbreviatedIRI=":ContextualFactor"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":PeripartumOnset"/>
+        <Class abbreviatedIRI=":Specifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Person"/>
+        <Class abbreviatedIRI="gufo:FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Pharmacological"/>
+        <Class abbreviatedIRI=":Treatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Phototherapy"/>
+        <Class abbreviatedIRI=":Treatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Prescription"/>
+        <Class abbreviatedIRI="gufo:Relator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Prescription"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            </ObjectInverseOf>
+            <Class abbreviatedIRI=":Patient"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Prescription"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            </ObjectInverseOf>
+            <Class abbreviatedIRI=":HealthcareProfessional"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":PsychiatricComorbidity"/>
+        <Class abbreviatedIRI=":ContextualFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":PsychodynamicTherapy"/>
+        <Class abbreviatedIRI=":Psychotherapeutic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":PsychomotorAgitationOrDelay"/>
+        <Class abbreviatedIRI=":AdditionalSymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":PsychosocialStressor"/>
+        <Class abbreviatedIRI=":ContextualFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Psychostimulant"/>
+        <Class abbreviatedIRI=":OtherTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Psychotherapeutic"/>
+        <Class abbreviatedIRI=":Treatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Psychotic"/>
+        <Class abbreviatedIRI=":Specifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":RecurringEpisode"/>
+        <Class abbreviatedIRI=":Course"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":RiskFactor"/>
+        <Class abbreviatedIRI="gufo:Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":RiskFactor"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class abbreviatedIRI=":Patient"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":SNRIs"/>
+        <Class abbreviatedIRI=":Pharmacological"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":SSRIs"/>
+        <Class abbreviatedIRI=":Pharmacological"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":SeasonalPattern"/>
+        <Class abbreviatedIRI=":Specifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Severity"/>
+        <Class abbreviatedIRI="gufo:IntrinsicMode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Severity"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            </ObjectInverseOf>
+            <Class abbreviatedIRI=":MajorDepressiveDisorder"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":SignificantWeightLossOrGain"/>
+        <Class abbreviatedIRI=":AdditionalSymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":SingleEpisode"/>
+        <Class abbreviatedIRI=":Course"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Specifier"/>
+        <Class abbreviatedIRI="gufo:Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":SuicidalIdeation"/>
+        <Class abbreviatedIRI=":AdditionalSymptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Suport"/>
+        <Class abbreviatedIRI=":Treatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":SupportGroup"/>
+        <Class abbreviatedIRI=":OtherTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Symptom"/>
+        <Class abbreviatedIRI="gufo:FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":SymptomCriteria"/>
+        <Class abbreviatedIRI="gufo:FunctionalComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":SymptomCriteria"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class abbreviatedIRI=":MajorDepressiveDisorder"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":SymptomCriteria"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            </ObjectInverseOf>
+            <Class abbreviatedIRI=":Patient"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":TCAs"/>
+        <Class abbreviatedIRI=":Pharmacological"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Treatment"/>
+        <Class abbreviatedIRI="gufo:FunctionalComplex"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":AdditionalSymptom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":AnxiousDistress"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":Atypical"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":AtypicalAntidepressants"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":Catatonic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":CognitiveBehavialTherapy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":ContextualFactor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":Course"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":DeepBrainStimulation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":DepressedMood"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":Diagnosis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":DiminishedAbilityToThinkConcentrateOrIndecisiveness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":ElectroconvulsiveTherapy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":EmotionallyDistressingEvent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":FamilyTendency"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":FatigueOrLossOfEnergy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":FeelingsOfWorthlessnessOrExcessiveOrInappropriateGuilt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":FemaleSex"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":GeneralMedicalDisorder"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Role"/>
+        <NamedIndividual abbreviatedIRI=":HealthcareProfessional"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":Herbal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":High"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":InsomniaOrHypersonmnia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":InterpersonalTherapy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":LossOfInterestOrPleasure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":Low"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":MAOIs"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":MajorDepressiveDisorder"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":MandatorySymptom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":MedicalComorbidity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Mixin"/>
+        <NamedIndividual abbreviatedIRI=":MedicalCondition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":MedicationSideEffect"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":Melancholic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":MixedFeature"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":Moderate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":OtherTreatment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Role"/>
+        <NamedIndividual abbreviatedIRI=":Patient"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":PeripartumOnset"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":Person"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":Pharmacological"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":Phototherapy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":Prescription"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":PsychiatricComorbidity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":PsychodynamicTherapy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":PsychomotorAgitationOrDelay"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":PsychosocialStressor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":Psychostimulant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":Psychotherapeutic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":Psychotic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":RecurringEpisode"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":RiskFactor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":SNRIs"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":SSRIs"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":SeasonalPattern"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":Severity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":SignificantWeightLossOrGain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":SingleEpisode"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":Specifier"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":SuicidalIdeation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual abbreviatedIRI=":Suport"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":SupportGroup"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Mixin"/>
+        <NamedIndividual abbreviatedIRI=":Symptom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Category"/>
+        <NamedIndividual abbreviatedIRI=":SymptomCriteria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual abbreviatedIRI=":TCAs"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Category"/>
+        <NamedIndividual abbreviatedIRI=":Treatment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:MaterialRelationshipType"/>
+        <NamedIndividual abbreviatedIRI=":suffersFrom"/>
+    </ClassAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":suffersFrom"/>
+        <Class abbreviatedIRI=":MedicalCondition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":suffersFrom"/>
+        <Class abbreviatedIRI=":Patient"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:AdditionalSymptom</AbbreviatedIRI>
+        <Literal xml:lang="en">Additional Symptom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:AnxiousDistress</AbbreviatedIRI>
+        <Literal xml:lang="en">Anxious distress</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Atypical</AbbreviatedIRI>
+        <Literal xml:lang="en">Atypical</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:AtypicalAntidepressants</AbbreviatedIRI>
+        <Literal xml:lang="en">Atypical Antidepressants</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Catatonic</AbbreviatedIRI>
+        <Literal xml:lang="en">Catatonic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:CognitiveBehavialTherapy</AbbreviatedIRI>
+        <Literal xml:lang="en">Cognitive Behavial Therapy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:ContextualFactor</AbbreviatedIRI>
+        <Literal xml:lang="en">Contextual Factor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Course</AbbreviatedIRI>
+        <Literal xml:lang="en">Course</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:DeepBrainStimulation</AbbreviatedIRI>
+        <Literal xml:lang="en">Deep brain Stimulation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:DepressedMood</AbbreviatedIRI>
+        <Literal xml:lang="en">Depressed Mood</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Diagnosis</AbbreviatedIRI>
+        <Literal xml:lang="en">Diagnosis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:DiminishedAbilityToThinkConcentrateOrIndecisiveness</AbbreviatedIRI>
+        <Literal xml:lang="en">Diminished ability to think, concentrate or indecisiveness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:ElectroconvulsiveTherapy</AbbreviatedIRI>
+        <Literal xml:lang="en">Electroconvulsive Therapy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:EmotionallyDistressingEvent</AbbreviatedIRI>
+        <Literal xml:lang="en">Emotionally Distressing Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:FamilyTendency</AbbreviatedIRI>
+        <Literal xml:lang="en">Family Tendency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:FatigueOrLossOfEnergy</AbbreviatedIRI>
+        <Literal xml:lang="en">Fatigue or loss of energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:FeelingsOfWorthlessnessOrExcessiveOrInappropriateGuilt</AbbreviatedIRI>
+        <Literal xml:lang="en">Feelings of worthlessness or excessive or inappropriate guilt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:FemaleSex</AbbreviatedIRI>
+        <Literal xml:lang="en">Female Sex</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:GeneralMedicalDisorder</AbbreviatedIRI>
+        <Literal xml:lang="en">General Medical Disorder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:HealthcareProfessional</AbbreviatedIRI>
+        <Literal xml:lang="en">Healthcare Professional</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Herbal</AbbreviatedIRI>
+        <Literal xml:lang="en">Herbal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:High</AbbreviatedIRI>
+        <Literal xml:lang="en">High</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:InsomniaOrHypersonmnia</AbbreviatedIRI>
+        <Literal xml:lang="en">Insomnia or hypersonmnia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:InterpersonalTherapy</AbbreviatedIRI>
+        <Literal xml:lang="en">Interpersonal Therapy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:LossOfInterestOrPleasure</AbbreviatedIRI>
+        <Literal xml:lang="en">Loss of interest or pleasure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Low</AbbreviatedIRI>
+        <Literal xml:lang="en">Low</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:MAOIs</AbbreviatedIRI>
+        <Literal xml:lang="en">MAOIs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:MajorDepressiveDisorder</AbbreviatedIRI>
+        <Literal xml:lang="en">Major Depressive Disorder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:MandatorySymptom</AbbreviatedIRI>
+        <Literal xml:lang="en">Mandatory Symptom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:MedicalComorbidity</AbbreviatedIRI>
+        <Literal xml:lang="en">Medical Comorbidity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:MedicalCondition</AbbreviatedIRI>
+        <Literal xml:lang="en">Medical Condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:MedicationSideEffect</AbbreviatedIRI>
+        <Literal xml:lang="en">Medication Side Effect</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Melancholic</AbbreviatedIRI>
+        <Literal xml:lang="en">Melancholic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:MixedFeature</AbbreviatedIRI>
+        <Literal xml:lang="en">Mixed Feature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Moderate</AbbreviatedIRI>
+        <Literal xml:lang="en">Moderate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:OtherTreatment</AbbreviatedIRI>
+        <Literal xml:lang="en">Other Treatment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Patient</AbbreviatedIRI>
+        <Literal xml:lang="en">Patient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:PeripartumOnset</AbbreviatedIRI>
+        <Literal xml:lang="en">Peripartum onset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Person</AbbreviatedIRI>
+        <Literal xml:lang="en">Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Pharmacological</AbbreviatedIRI>
+        <Literal xml:lang="en">Pharmacological</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Phototherapy</AbbreviatedIRI>
+        <Literal xml:lang="en">Phototherapy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Prescription</AbbreviatedIRI>
+        <Literal xml:lang="en">Prescription</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:PsychiatricComorbidity</AbbreviatedIRI>
+        <Literal xml:lang="en">Psychiatric Comorbidity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:PsychodynamicTherapy</AbbreviatedIRI>
+        <Literal xml:lang="en">Psychodynamic Therapy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:PsychomotorAgitationOrDelay</AbbreviatedIRI>
+        <Literal xml:lang="en">Psychomotor agitation or delay</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:PsychosocialStressor</AbbreviatedIRI>
+        <Literal xml:lang="en">Psychosocial Stressor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Psychostimulant</AbbreviatedIRI>
+        <Literal xml:lang="en">Psychostimulant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Psychotherapeutic</AbbreviatedIRI>
+        <Literal xml:lang="en">Psychotherapeutic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Psychotic</AbbreviatedIRI>
+        <Literal xml:lang="en">Psychotic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:RecurringEpisode</AbbreviatedIRI>
+        <Literal xml:lang="en">Recurring Episode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:RiskFactor</AbbreviatedIRI>
+        <Literal xml:lang="en">Risk Factor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:SNRIs</AbbreviatedIRI>
+        <Literal xml:lang="en">SNRIs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:SSRIs</AbbreviatedIRI>
+        <Literal xml:lang="en">SSRIs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:SeasonalPattern</AbbreviatedIRI>
+        <Literal xml:lang="en">Seasonal Pattern</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Severity</AbbreviatedIRI>
+        <Literal xml:lang="en">Severity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:SignificantWeightLossOrGain</AbbreviatedIRI>
+        <Literal xml:lang="en">Significant weight loss or gain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:SingleEpisode</AbbreviatedIRI>
+        <Literal xml:lang="en">Single Episode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Specifier</AbbreviatedIRI>
+        <Literal xml:lang="en">Specifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:SuicidalIdeation</AbbreviatedIRI>
+        <Literal xml:lang="en">Suicidal ideation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Suport</AbbreviatedIRI>
+        <Literal xml:lang="en">Suport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:SupportGroup</AbbreviatedIRI>
+        <Literal xml:lang="en">Support Group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Symptom</AbbreviatedIRI>
+        <Literal xml:lang="en">Symptom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:SymptomCriteria</AbbreviatedIRI>
+        <Literal xml:lang="en">Symptom Criteria</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:TCAs</AbbreviatedIRI>
+        <Literal xml:lang="en">TCAs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Treatment</AbbreviatedIRI>
+        <Literal xml:lang="en">Treatment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:suffersFrom</AbbreviatedIRI>
+        <Literal xml:lang="en">suffersFrom</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
