@@ -1,12 +1,13 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://2024/mdd/ontology/final"
+     xml:base="http://MDD/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://2024/mdd/ontology/final">
-    <Prefix name="" IRI="http://2024/mdd/ontology/teste#"/>
+     ontologyIRI="http://MDD/"
+     versionIRI="http://MDD/1.0.0">
+    <Prefix name="" IRI="http://MDD/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -15,1458 +16,1471 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://purl.org/nemo/gufo#</Import>
     <Declaration>
-        <Class abbreviatedIRI=":AdditionalSymptom"/>
+        <Class IRI="http://2024/mdd/ontology/teste#AdditionalSymptom"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":AnxiousDistress"/>
+        <Class IRI="http://2024/mdd/ontology/teste#AnxiousDistress"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Atypical"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Atypical"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":AtypicalAntidepressants"/>
+        <Class IRI="http://2024/mdd/ontology/teste#AtypicalAntidepressants"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Catatonic"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Catatonic"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":CognitiveBehavialTherapy"/>
+        <Class IRI="http://2024/mdd/ontology/teste#CognitiveBehavialTherapy"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":ContextualFactor"/>
+        <Class IRI="http://2024/mdd/ontology/teste#ContextualFactor"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Course"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Course"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":DeepBrainStimulation"/>
+        <Class IRI="http://2024/mdd/ontology/teste#DeepBrainStimulation"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":DepressedMood"/>
+        <Class IRI="http://2024/mdd/ontology/teste#DepressedMood"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Diagnosis"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Diagnosis"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":DiminishedAbilityToThinkConcentrateOrIndecisiveness"/>
+        <Class IRI="http://2024/mdd/ontology/teste#DiminishedAbilityToThinkConcentrateOrIndecisiveness"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":ElectroconvulsiveTherapy"/>
+        <Class IRI="http://2024/mdd/ontology/teste#ElectroconvulsiveTherapy"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":EmotionallyDistressingEvent"/>
+        <Class IRI="http://2024/mdd/ontology/teste#EmotionallyDistressingEvent"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":FamilyTendency"/>
+        <Class IRI="http://2024/mdd/ontology/teste#FamilyTendency"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":FatigueOrLossOfEnergy"/>
+        <Class IRI="http://2024/mdd/ontology/teste#FatigueOrLossOfEnergy"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":FeelingsOfWorthlessnessOrExcessiveOrInappropriateGuilt"/>
+        <Class IRI="http://2024/mdd/ontology/teste#FeelingsOfWorthlessnessOrExcessiveOrInappropriateGuilt"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":FemaleSex"/>
+        <Class IRI="http://2024/mdd/ontology/teste#FemaleSex"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GeneralMedicalDisorder"/>
+        <Class IRI="http://2024/mdd/ontology/teste#GeneralMedicalDisorder"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":HealthcareProfessional"/>
+        <Class IRI="http://2024/mdd/ontology/teste#HealthcareProfessional"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Herbal"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Herbal"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":High"/>
+        <Class IRI="http://2024/mdd/ontology/teste#High"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":InsomniaOrHypersonmnia"/>
+        <Class IRI="http://2024/mdd/ontology/teste#InsomniaOrHypersonmnia"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":InterpersonalTherapy"/>
+        <Class IRI="http://2024/mdd/ontology/teste#InterpersonalTherapy"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":LossOfInterestOrPleasure"/>
+        <Class IRI="http://2024/mdd/ontology/teste#LossOfInterestOrPleasure"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Low"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Low"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":MAOIs"/>
+        <Class IRI="http://2024/mdd/ontology/teste#MAOIs"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":MajorDepressiveDisorder"/>
+        <Class IRI="http://2024/mdd/ontology/teste#MajorDepressiveDisorder"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":MandatorySymptom"/>
+        <Class IRI="http://2024/mdd/ontology/teste#MandatorySymptom"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":MedicalComorbidity"/>
+        <Class IRI="http://2024/mdd/ontology/teste#MedicalComorbidity"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":MedicalCondition"/>
+        <Class IRI="http://2024/mdd/ontology/teste#MedicalCondition"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":MedicationSideEffect"/>
+        <Class IRI="http://2024/mdd/ontology/teste#MedicationSideEffect"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Melancholic"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Melancholic"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":MixedFeature"/>
+        <Class IRI="http://2024/mdd/ontology/teste#MixedFeature"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Moderate"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Moderate"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":OtherTreatment"/>
+        <Class IRI="http://2024/mdd/ontology/teste#OtherTreatment"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Patient"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Patient"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":PeripartumOnset"/>
+        <Class IRI="http://2024/mdd/ontology/teste#PeripartumOnset"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Person"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Person"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Pharmacological"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Pharmacological"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Phototherapy"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Phototherapy"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Prescription"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Prescription"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":PsychiatricComorbidity"/>
+        <Class IRI="http://2024/mdd/ontology/teste#PsychiatricComorbidity"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":PsychodynamicTherapy"/>
+        <Class IRI="http://2024/mdd/ontology/teste#PsychodynamicTherapy"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":PsychomotorAgitationOrDelay"/>
+        <Class IRI="http://2024/mdd/ontology/teste#PsychomotorAgitationOrDelay"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":PsychosocialStressor"/>
+        <Class IRI="http://2024/mdd/ontology/teste#PsychosocialStressor"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Psychostimulant"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Psychostimulant"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Psychotherapeutic"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Psychotherapeutic"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Psychotic"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Psychotic"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":RecurringEpisode"/>
+        <Class IRI="http://2024/mdd/ontology/teste#RecurringEpisode"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":RiskFactor"/>
+        <Class IRI="http://2024/mdd/ontology/teste#RiskFactor"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":SNRIs"/>
+        <Class IRI="http://2024/mdd/ontology/teste#SNRIs"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":SSRIs"/>
+        <Class IRI="http://2024/mdd/ontology/teste#SSRIs"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":SeasonalPattern"/>
+        <Class IRI="http://2024/mdd/ontology/teste#SeasonalPattern"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Severity"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Severity"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":SignificantWeightLossOrGain"/>
+        <Class IRI="http://2024/mdd/ontology/teste#SignificantWeightLossOrGain"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":SingleEpisode"/>
+        <Class IRI="http://2024/mdd/ontology/teste#SingleEpisode"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Specifier"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Specifier"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":SuicidalIdeation"/>
+        <Class IRI="http://2024/mdd/ontology/teste#SuicidalIdeation"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Suport"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Suport"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":SupportGroup"/>
+        <Class IRI="http://2024/mdd/ontology/teste#SupportGroup"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Symptom"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Symptom"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":SymptomCriteria"/>
+        <Class IRI="http://2024/mdd/ontology/teste#SymptomCriteria"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":TCAs"/>
+        <Class IRI="http://2024/mdd/ontology/teste#TCAs"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Treatment"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Treatment"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI=":suffersFrom"/>
+        <ObjectProperty IRI="http://2024/mdd/ontology/teste#suffersFrom"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":AdditionalSymptom"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#AdditionalSymptom"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":AnxiousDistress"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#AnxiousDistress"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":Atypical"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Atypical"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":AtypicalAntidepressants"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#AtypicalAntidepressants"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":Catatonic"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Catatonic"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":CognitiveBehavialTherapy"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#CognitiveBehavialTherapy"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":ContextualFactor"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#ContextualFactor"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":Course"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Course"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":DeepBrainStimulation"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#DeepBrainStimulation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":DepressedMood"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#DepressedMood"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":Diagnosis"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Diagnosis"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":DiminishedAbilityToThinkConcentrateOrIndecisiveness"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#DiminishedAbilityToThinkConcentrateOrIndecisiveness"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":ElectroconvulsiveTherapy"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#ElectroconvulsiveTherapy"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":EmotionallyDistressingEvent"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#EmotionallyDistressingEvent"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":FamilyTendency"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#FamilyTendency"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":FatigueOrLossOfEnergy"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#FatigueOrLossOfEnergy"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":FeelingsOfWorthlessnessOrExcessiveOrInappropriateGuilt"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#FeelingsOfWorthlessnessOrExcessiveOrInappropriateGuilt"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":FemaleSex"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#FemaleSex"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":GeneralMedicalDisorder"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#GeneralMedicalDisorder"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":HealthcareProfessional"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#HealthcareProfessional"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":Herbal"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Herbal"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":High"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#High"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":InsomniaOrHypersonmnia"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#InsomniaOrHypersonmnia"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":InterpersonalTherapy"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#InterpersonalTherapy"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":LossOfInterestOrPleasure"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#LossOfInterestOrPleasure"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":Low"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Low"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":MAOIs"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#MAOIs"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":MajorDepressiveDisorder"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#MajorDepressiveDisorder"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":MandatorySymptom"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#MandatorySymptom"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":MedicalComorbidity"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#MedicalComorbidity"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":MedicalCondition"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#MedicalCondition"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":MedicationSideEffect"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#MedicationSideEffect"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":Melancholic"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Melancholic"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":MixedFeature"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#MixedFeature"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":Moderate"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Moderate"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":OtherTreatment"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#OtherTreatment"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":Patient"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Patient"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":PeripartumOnset"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#PeripartumOnset"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":Person"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Person"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":Pharmacological"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Pharmacological"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":Phototherapy"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Phototherapy"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":Prescription"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Prescription"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":PsychiatricComorbidity"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#PsychiatricComorbidity"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":PsychodynamicTherapy"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#PsychodynamicTherapy"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":PsychomotorAgitationOrDelay"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#PsychomotorAgitationOrDelay"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":PsychosocialStressor"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#PsychosocialStressor"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":Psychostimulant"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Psychostimulant"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":Psychotherapeutic"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Psychotherapeutic"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":Psychotic"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Psychotic"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":RecurringEpisode"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#RecurringEpisode"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":RiskFactor"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#RiskFactor"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":SNRIs"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#SNRIs"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":SSRIs"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#SSRIs"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":SeasonalPattern"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#SeasonalPattern"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":Severity"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Severity"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":SignificantWeightLossOrGain"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#SignificantWeightLossOrGain"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":SingleEpisode"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#SingleEpisode"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":Specifier"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Specifier"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":SuicidalIdeation"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#SuicidalIdeation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":Suport"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Suport"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":SupportGroup"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#SupportGroup"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":Symptom"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Symptom"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":SymptomCriteria"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#SymptomCriteria"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":TCAs"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#TCAs"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":Treatment"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Treatment"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":suffersFrom"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#suffersFrom"/>
     </Declaration>
     <SubClassOf>
-        <Class abbreviatedIRI=":AdditionalSymptom"/>
-        <Class abbreviatedIRI=":Symptom"/>
+        <Class IRI="http://2024/mdd/ontology/teste#AdditionalSymptom"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Symptom"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":AnxiousDistress"/>
-        <Class abbreviatedIRI=":Specifier"/>
+        <Class IRI="http://2024/mdd/ontology/teste#AnxiousDistress"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Specifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Atypical"/>
-        <Class abbreviatedIRI=":Specifier"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Atypical"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Specifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":AtypicalAntidepressants"/>
-        <Class abbreviatedIRI=":Pharmacological"/>
+        <Class IRI="http://2024/mdd/ontology/teste#AtypicalAntidepressants"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Pharmacological"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Catatonic"/>
-        <Class abbreviatedIRI=":Specifier"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Catatonic"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Specifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":CognitiveBehavialTherapy"/>
-        <Class abbreviatedIRI=":Psychotherapeutic"/>
+        <Class IRI="http://2024/mdd/ontology/teste#CognitiveBehavialTherapy"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Psychotherapeutic"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":ContextualFactor"/>
+        <Class IRI="http://2024/mdd/ontology/teste#ContextualFactor"/>
         <Class abbreviatedIRI="gufo:Quality"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":ContextualFactor"/>
+        <Class IRI="http://2024/mdd/ontology/teste#ContextualFactor"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="gufo:externallyDependsOn"/>
-            <Class abbreviatedIRI=":MedicalCondition"/>
+            <Class IRI="http://2024/mdd/ontology/teste#MedicalCondition"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":ContextualFactor"/>
+        <Class IRI="http://2024/mdd/ontology/teste#ContextualFactor"/>
         <ObjectMinCardinality cardinality="1">
             <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
-            <Class abbreviatedIRI=":Patient"/>
+            <Class IRI="http://2024/mdd/ontology/teste#Patient"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Course"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Course"/>
         <Class abbreviatedIRI="gufo:IntrinsicMode"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Course"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Course"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="gufo:externallyDependsOn"/>
-            <Class abbreviatedIRI=":MajorDepressiveDisorder"/>
+            <Class IRI="http://2024/mdd/ontology/teste#MajorDepressiveDisorder"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Course"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Course"/>
         <ObjectMinCardinality cardinality="1">
             <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
-            <Class abbreviatedIRI=":MajorDepressiveDisorder"/>
+            <Class IRI="http://2024/mdd/ontology/teste#MajorDepressiveDisorder"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":DeepBrainStimulation"/>
-        <Class abbreviatedIRI=":OtherTreatment"/>
+        <Class IRI="http://2024/mdd/ontology/teste#DeepBrainStimulation"/>
+        <Class IRI="http://2024/mdd/ontology/teste#OtherTreatment"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":DepressedMood"/>
-        <Class abbreviatedIRI=":MandatorySymptom"/>
+        <Class IRI="http://2024/mdd/ontology/teste#DepressedMood"/>
+        <Class IRI="http://2024/mdd/ontology/teste#MandatorySymptom"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Diagnosis"/>
-        <Class abbreviatedIRI="gufo:Relator"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Diagnosis"/>
+        <Class abbreviatedIRI="gufo:IntrinsicAspect"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Diagnosis"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Diagnosis"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="gufo:mediates"/>
-            <Class abbreviatedIRI=":HealthcareProfessional"/>
+            <Class IRI="http://2024/mdd/ontology/teste#HealthcareProfessional"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Diagnosis"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Diagnosis"/>
         <ObjectMinCardinality cardinality="1">
             <ObjectProperty abbreviatedIRI="gufo:mediates"/>
-            <Class abbreviatedIRI=":MedicalCondition"/>
+            <Class IRI="http://2024/mdd/ontology/teste#MedicalCondition"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Diagnosis"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Diagnosis"/>
         <ObjectMinCardinality cardinality="1">
             <ObjectProperty abbreviatedIRI="gufo:mediates"/>
-            <Class abbreviatedIRI=":Patient"/>
+            <Class IRI="http://2024/mdd/ontology/teste#Patient"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":DiminishedAbilityToThinkConcentrateOrIndecisiveness"/>
-        <Class abbreviatedIRI=":AdditionalSymptom"/>
+        <Class IRI="http://2024/mdd/ontology/teste#DiminishedAbilityToThinkConcentrateOrIndecisiveness"/>
+        <Class IRI="http://2024/mdd/ontology/teste#AdditionalSymptom"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":ElectroconvulsiveTherapy"/>
-        <Class abbreviatedIRI=":Treatment"/>
+        <Class IRI="http://2024/mdd/ontology/teste#ElectroconvulsiveTherapy"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Treatment"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":EmotionallyDistressingEvent"/>
-        <Class abbreviatedIRI=":RiskFactor"/>
+        <Class IRI="http://2024/mdd/ontology/teste#EmotionallyDistressingEvent"/>
+        <Class IRI="http://2024/mdd/ontology/teste#RiskFactor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":FamilyTendency"/>
-        <Class abbreviatedIRI=":RiskFactor"/>
+        <Class IRI="http://2024/mdd/ontology/teste#FamilyTendency"/>
+        <Class IRI="http://2024/mdd/ontology/teste#RiskFactor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":FatigueOrLossOfEnergy"/>
-        <Class abbreviatedIRI=":AdditionalSymptom"/>
+        <Class IRI="http://2024/mdd/ontology/teste#FatigueOrLossOfEnergy"/>
+        <Class IRI="http://2024/mdd/ontology/teste#AdditionalSymptom"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":FeelingsOfWorthlessnessOrExcessiveOrInappropriateGuilt"/>
-        <Class abbreviatedIRI=":AdditionalSymptom"/>
+        <Class IRI="http://2024/mdd/ontology/teste#FeelingsOfWorthlessnessOrExcessiveOrInappropriateGuilt"/>
+        <Class IRI="http://2024/mdd/ontology/teste#AdditionalSymptom"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":FemaleSex"/>
-        <Class abbreviatedIRI=":RiskFactor"/>
+        <Class IRI="http://2024/mdd/ontology/teste#FemaleSex"/>
+        <Class IRI="http://2024/mdd/ontology/teste#RiskFactor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GeneralMedicalDisorder"/>
-        <Class abbreviatedIRI=":RiskFactor"/>
+        <Class IRI="http://2024/mdd/ontology/teste#GeneralMedicalDisorder"/>
+        <Class IRI="http://2024/mdd/ontology/teste#RiskFactor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":HealthcareProfessional"/>
-        <Class abbreviatedIRI=":Person"/>
+        <Class IRI="http://2024/mdd/ontology/teste#HealthcareProfessional"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Person"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":HealthcareProfessional"/>
+        <Class IRI="http://2024/mdd/ontology/teste#HealthcareProfessional"/>
         <ObjectMinCardinality cardinality="1">
             <ObjectProperty abbreviatedIRI="gufo:mediates"/>
-            <Class abbreviatedIRI=":Prescription"/>
+            <Class IRI="http://2024/mdd/ontology/teste#Prescription"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":HealthcareProfessional"/>
+        <Class IRI="http://2024/mdd/ontology/teste#HealthcareProfessional"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectInverseOf>
                 <ObjectProperty abbreviatedIRI="gufo:mediates"/>
             </ObjectInverseOf>
-            <Class abbreviatedIRI=":Diagnosis"/>
+            <Class IRI="http://2024/mdd/ontology/teste#Diagnosis"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Herbal"/>
-        <Class abbreviatedIRI=":OtherTreatment"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Herbal"/>
+        <Class IRI="http://2024/mdd/ontology/teste#OtherTreatment"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":High"/>
-        <Class abbreviatedIRI=":Severity"/>
+        <Class IRI="http://2024/mdd/ontology/teste#High"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Severity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":InsomniaOrHypersonmnia"/>
-        <Class abbreviatedIRI=":AdditionalSymptom"/>
+        <Class IRI="http://2024/mdd/ontology/teste#InsomniaOrHypersonmnia"/>
+        <Class IRI="http://2024/mdd/ontology/teste#AdditionalSymptom"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":InterpersonalTherapy"/>
-        <Class abbreviatedIRI=":Psychotherapeutic"/>
+        <Class IRI="http://2024/mdd/ontology/teste#InterpersonalTherapy"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Psychotherapeutic"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":LossOfInterestOrPleasure"/>
-        <Class abbreviatedIRI=":MandatorySymptom"/>
+        <Class IRI="http://2024/mdd/ontology/teste#LossOfInterestOrPleasure"/>
+        <Class IRI="http://2024/mdd/ontology/teste#MandatorySymptom"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Low"/>
-        <Class abbreviatedIRI=":Severity"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Low"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Severity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":MAOIs"/>
-        <Class abbreviatedIRI=":Pharmacological"/>
+        <Class IRI="http://2024/mdd/ontology/teste#MAOIs"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Pharmacological"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":MajorDepressiveDisorder"/>
-        <Class abbreviatedIRI=":MedicalCondition"/>
+        <Class IRI="http://2024/mdd/ontology/teste#MajorDepressiveDisorder"/>
+        <Class IRI="http://2024/mdd/ontology/teste#MedicalCondition"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":MajorDepressiveDisorder"/>
+        <Class IRI="http://2024/mdd/ontology/teste#MajorDepressiveDisorder"/>
         <ObjectMinCardinality cardinality="1">
             <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
-            <Class abbreviatedIRI=":Severity"/>
+            <Class IRI="http://2024/mdd/ontology/teste#Severity"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":MajorDepressiveDisorder"/>
+        <Class IRI="http://2024/mdd/ontology/teste#MajorDepressiveDisorder"/>
         <ObjectMinCardinality cardinality="1">
             <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
-            <Class abbreviatedIRI=":Specifier"/>
+            <Class IRI="http://2024/mdd/ontology/teste#Specifier"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":MajorDepressiveDisorder"/>
+        <Class IRI="http://2024/mdd/ontology/teste#MajorDepressiveDisorder"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectInverseOf>
                 <ObjectProperty abbreviatedIRI="gufo:externallyDependsOn"/>
             </ObjectInverseOf>
-            <Class abbreviatedIRI=":Course"/>
+            <Class IRI="http://2024/mdd/ontology/teste#Course"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":MajorDepressiveDisorder"/>
+        <Class IRI="http://2024/mdd/ontology/teste#MajorDepressiveDisorder"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectInverseOf>
                 <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
             </ObjectInverseOf>
-            <Class abbreviatedIRI=":Course"/>
+            <Class IRI="http://2024/mdd/ontology/teste#Course"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":MajorDepressiveDisorder"/>
+        <Class IRI="http://2024/mdd/ontology/teste#MajorDepressiveDisorder"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectInverseOf>
                 <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
             </ObjectInverseOf>
-            <Class abbreviatedIRI=":SymptomCriteria"/>
+            <Class IRI="http://2024/mdd/ontology/teste#SymptomCriteria"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":MandatorySymptom"/>
-        <Class abbreviatedIRI=":Symptom"/>
+        <Class IRI="http://2024/mdd/ontology/teste#MandatorySymptom"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Symptom"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":MedicalComorbidity"/>
-        <Class abbreviatedIRI=":ContextualFactor"/>
+        <Class IRI="http://2024/mdd/ontology/teste#MedicalComorbidity"/>
+        <Class IRI="http://2024/mdd/ontology/teste#ContextualFactor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":MedicalCondition"/>
+        <Class IRI="http://2024/mdd/ontology/teste#MedicalCondition"/>
         <Class abbreviatedIRI="gufo:FunctionalComplex"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":MedicalCondition"/>
+        <Class IRI="http://2024/mdd/ontology/teste#MedicalCondition"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectInverseOf>
                 <ObjectProperty abbreviatedIRI="gufo:mediates"/>
             </ObjectInverseOf>
-            <Class abbreviatedIRI=":Diagnosis"/>
+            <Class IRI="http://2024/mdd/ontology/teste#Diagnosis"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":MedicationSideEffect"/>
-        <Class abbreviatedIRI=":RiskFactor"/>
+        <Class IRI="http://2024/mdd/ontology/teste#MedicationSideEffect"/>
+        <Class IRI="http://2024/mdd/ontology/teste#RiskFactor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Melancholic"/>
-        <Class abbreviatedIRI=":Specifier"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Melancholic"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Specifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":MixedFeature"/>
-        <Class abbreviatedIRI=":Specifier"/>
+        <Class IRI="http://2024/mdd/ontology/teste#MixedFeature"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Specifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Moderate"/>
-        <Class abbreviatedIRI=":Severity"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Moderate"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Severity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":OtherTreatment"/>
-        <Class abbreviatedIRI=":Treatment"/>
+        <Class IRI="http://2024/mdd/ontology/teste#OtherTreatment"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Treatment"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Patient"/>
-        <Class abbreviatedIRI=":Person"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Patient"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Person"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Patient"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Patient"/>
         <ObjectSomeValuesFrom>
             <ObjectInverseOf>
                 <ObjectProperty abbreviatedIRI="gufo:mediates"/>
             </ObjectInverseOf>
-            <Class abbreviatedIRI=":Diagnosis"/>
+            <Class IRI="http://2024/mdd/ontology/teste#Diagnosis"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Patient"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Patient"/>
         <ObjectMinCardinality cardinality="1">
             <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
-            <Class abbreviatedIRI=":SymptomCriteria"/>
+            <Class IRI="http://2024/mdd/ontology/teste#SymptomCriteria"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Patient"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Patient"/>
         <ObjectMinCardinality cardinality="1">
             <ObjectProperty abbreviatedIRI="gufo:mediates"/>
-            <Class abbreviatedIRI=":Prescription"/>
+            <Class IRI="http://2024/mdd/ontology/teste#Prescription"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Patient"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Patient"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectInverseOf>
                 <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
             </ObjectInverseOf>
-            <Class abbreviatedIRI=":ContextualFactor"/>
+            <Class IRI="http://2024/mdd/ontology/teste#ContextualFactor"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":PeripartumOnset"/>
-        <Class abbreviatedIRI=":Specifier"/>
+        <Class IRI="http://2024/mdd/ontology/teste#PeripartumOnset"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Specifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Person"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Person"/>
         <Class abbreviatedIRI="gufo:FunctionalComplex"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Pharmacological"/>
-        <Class abbreviatedIRI=":Treatment"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Pharmacological"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Treatment"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Phototherapy"/>
-        <Class abbreviatedIRI=":Treatment"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Phototherapy"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Treatment"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Prescription"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Prescription"/>
         <Class abbreviatedIRI="gufo:Relator"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Prescription"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Prescription"/>
         <ObjectSomeValuesFrom>
             <ObjectInverseOf>
                 <ObjectProperty abbreviatedIRI="gufo:mediates"/>
             </ObjectInverseOf>
-            <Class abbreviatedIRI=":Patient"/>
+            <Class IRI="http://2024/mdd/ontology/teste#Patient"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Prescription"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Prescription"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectInverseOf>
                 <ObjectProperty abbreviatedIRI="gufo:mediates"/>
             </ObjectInverseOf>
-            <Class abbreviatedIRI=":HealthcareProfessional"/>
+            <Class IRI="http://2024/mdd/ontology/teste#HealthcareProfessional"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":PsychiatricComorbidity"/>
-        <Class abbreviatedIRI=":ContextualFactor"/>
+        <Class IRI="http://2024/mdd/ontology/teste#PsychiatricComorbidity"/>
+        <Class IRI="http://2024/mdd/ontology/teste#ContextualFactor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":PsychodynamicTherapy"/>
-        <Class abbreviatedIRI=":Psychotherapeutic"/>
+        <Class IRI="http://2024/mdd/ontology/teste#PsychodynamicTherapy"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Psychotherapeutic"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":PsychomotorAgitationOrDelay"/>
-        <Class abbreviatedIRI=":AdditionalSymptom"/>
+        <Class IRI="http://2024/mdd/ontology/teste#PsychomotorAgitationOrDelay"/>
+        <Class IRI="http://2024/mdd/ontology/teste#AdditionalSymptom"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":PsychosocialStressor"/>
-        <Class abbreviatedIRI=":ContextualFactor"/>
+        <Class IRI="http://2024/mdd/ontology/teste#PsychosocialStressor"/>
+        <Class IRI="http://2024/mdd/ontology/teste#ContextualFactor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Psychostimulant"/>
-        <Class abbreviatedIRI=":OtherTreatment"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Psychostimulant"/>
+        <Class IRI="http://2024/mdd/ontology/teste#OtherTreatment"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Psychotherapeutic"/>
-        <Class abbreviatedIRI=":Treatment"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Psychotherapeutic"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Treatment"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Psychotic"/>
-        <Class abbreviatedIRI=":Specifier"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Psychotic"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Specifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":RecurringEpisode"/>
-        <Class abbreviatedIRI=":Course"/>
+        <Class IRI="http://2024/mdd/ontology/teste#RecurringEpisode"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Course"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":RiskFactor"/>
+        <Class IRI="http://2024/mdd/ontology/teste#RiskFactor"/>
         <Class abbreviatedIRI="gufo:Quality"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":RiskFactor"/>
+        <Class IRI="http://2024/mdd/ontology/teste#RiskFactor"/>
         <ObjectMinCardinality cardinality="1">
             <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
-            <Class abbreviatedIRI=":Patient"/>
+            <Class IRI="http://2024/mdd/ontology/teste#Patient"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":SNRIs"/>
-        <Class abbreviatedIRI=":Pharmacological"/>
+        <Class IRI="http://2024/mdd/ontology/teste#SNRIs"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Pharmacological"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":SSRIs"/>
-        <Class abbreviatedIRI=":Pharmacological"/>
+        <Class IRI="http://2024/mdd/ontology/teste#SSRIs"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Pharmacological"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":SeasonalPattern"/>
-        <Class abbreviatedIRI=":Specifier"/>
+        <Class IRI="http://2024/mdd/ontology/teste#SeasonalPattern"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Specifier"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Severity"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Severity"/>
         <Class abbreviatedIRI="gufo:IntrinsicMode"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Severity"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Severity"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectInverseOf>
                 <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
             </ObjectInverseOf>
-            <Class abbreviatedIRI=":MajorDepressiveDisorder"/>
+            <Class IRI="http://2024/mdd/ontology/teste#MajorDepressiveDisorder"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":SignificantWeightLossOrGain"/>
-        <Class abbreviatedIRI=":AdditionalSymptom"/>
+        <Class IRI="http://2024/mdd/ontology/teste#SignificantWeightLossOrGain"/>
+        <Class IRI="http://2024/mdd/ontology/teste#AdditionalSymptom"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":SingleEpisode"/>
-        <Class abbreviatedIRI=":Course"/>
+        <Class IRI="http://2024/mdd/ontology/teste#SingleEpisode"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Course"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Specifier"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Specifier"/>
         <Class abbreviatedIRI="gufo:Quality"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":SuicidalIdeation"/>
-        <Class abbreviatedIRI=":AdditionalSymptom"/>
+        <Class IRI="http://2024/mdd/ontology/teste#SuicidalIdeation"/>
+        <Class IRI="http://2024/mdd/ontology/teste#AdditionalSymptom"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Suport"/>
-        <Class abbreviatedIRI=":Treatment"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Suport"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Treatment"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":SupportGroup"/>
-        <Class abbreviatedIRI=":OtherTreatment"/>
+        <Class IRI="http://2024/mdd/ontology/teste#SupportGroup"/>
+        <Class IRI="http://2024/mdd/ontology/teste#OtherTreatment"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Symptom"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Symptom"/>
         <Class abbreviatedIRI="gufo:FunctionalComplex"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":SymptomCriteria"/>
+        <Class IRI="http://2024/mdd/ontology/teste#SymptomCriteria"/>
         <Class abbreviatedIRI="gufo:FunctionalComplex"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":SymptomCriteria"/>
+        <Class IRI="http://2024/mdd/ontology/teste#SymptomCriteria"/>
         <ObjectMinCardinality cardinality="1">
             <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
-            <Class abbreviatedIRI=":MajorDepressiveDisorder"/>
+            <Class IRI="http://2024/mdd/ontology/teste#MajorDepressiveDisorder"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":SymptomCriteria"/>
+        <Class IRI="http://2024/mdd/ontology/teste#SymptomCriteria"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectInverseOf>
                 <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
             </ObjectInverseOf>
-            <Class abbreviatedIRI=":Patient"/>
+            <Class IRI="http://2024/mdd/ontology/teste#Patient"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":TCAs"/>
-        <Class abbreviatedIRI=":Pharmacological"/>
+        <Class IRI="http://2024/mdd/ontology/teste#TCAs"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Pharmacological"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Treatment"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Treatment"/>
         <Class abbreviatedIRI="gufo:FunctionalComplex"/>
     </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://2024/mdd/ontology/teste#DepressedMood"/>
+        <Class IRI="http://2024/mdd/ontology/teste#LossOfInterestOrPleasure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://2024/mdd/ontology/teste#DiminishedAbilityToThinkConcentrateOrIndecisiveness"/>
+        <Class IRI="http://2024/mdd/ontology/teste#FatigueOrLossOfEnergy"/>
+        <Class IRI="http://2024/mdd/ontology/teste#FeelingsOfWorthlessnessOrExcessiveOrInappropriateGuilt"/>
+        <Class IRI="http://2024/mdd/ontology/teste#InsomniaOrHypersonmnia"/>
+        <Class IRI="http://2024/mdd/ontology/teste#PsychomotorAgitationOrDelay"/>
+        <Class IRI="http://2024/mdd/ontology/teste#SignificantWeightLossOrGain"/>
+        <Class IRI="http://2024/mdd/ontology/teste#SuicidalIdeation"/>
+    </DisjointClasses>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:Kind"/>
-        <NamedIndividual abbreviatedIRI=":AdditionalSymptom"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#AdditionalSymptom"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":AnxiousDistress"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#AnxiousDistress"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":Atypical"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Atypical"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":AtypicalAntidepressants"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#AtypicalAntidepressants"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":Catatonic"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Catatonic"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":CognitiveBehavialTherapy"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class abbreviatedIRI="gufo:Kind"/>
-        <NamedIndividual abbreviatedIRI=":ContextualFactor"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class abbreviatedIRI="gufo:Kind"/>
-        <NamedIndividual abbreviatedIRI=":Course"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":DeepBrainStimulation"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":DepressedMood"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#CognitiveBehavialTherapy"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:Kind"/>
-        <NamedIndividual abbreviatedIRI=":Diagnosis"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":DiminishedAbilityToThinkConcentrateOrIndecisiveness"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#ContextualFactor"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:Kind"/>
-        <NamedIndividual abbreviatedIRI=":ElectroconvulsiveTherapy"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Course"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":EmotionallyDistressingEvent"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#DeepBrainStimulation"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":FamilyTendency"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#DepressedMood"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Diagnosis"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":FatigueOrLossOfEnergy"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#DiminishedAbilityToThinkConcentrateOrIndecisiveness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#ElectroconvulsiveTherapy"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":FeelingsOfWorthlessnessOrExcessiveOrInappropriateGuilt"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#EmotionallyDistressingEvent"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":FemaleSex"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#FamilyTendency"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":GeneralMedicalDisorder"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#FatigueOrLossOfEnergy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#FeelingsOfWorthlessnessOrExcessiveOrInappropriateGuilt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#FemaleSex"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:SubKind"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#GeneralMedicalDisorder"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:Role"/>
-        <NamedIndividual abbreviatedIRI=":HealthcareProfessional"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#HealthcareProfessional"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":Herbal"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Herbal"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":High"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#High"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":InsomniaOrHypersonmnia"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#InsomniaOrHypersonmnia"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":InterpersonalTherapy"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#InterpersonalTherapy"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":LossOfInterestOrPleasure"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#LossOfInterestOrPleasure"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":Low"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Low"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":MAOIs"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#MAOIs"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:Kind"/>
-        <NamedIndividual abbreviatedIRI=":MajorDepressiveDisorder"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#MajorDepressiveDisorder"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:Kind"/>
-        <NamedIndividual abbreviatedIRI=":MandatorySymptom"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#MandatorySymptom"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":MedicalComorbidity"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#MedicalComorbidity"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:Mixin"/>
-        <NamedIndividual abbreviatedIRI=":MedicalCondition"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#MedicalCondition"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":MedicationSideEffect"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#MedicationSideEffect"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":Melancholic"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Melancholic"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":MixedFeature"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#MixedFeature"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":Moderate"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Moderate"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:Kind"/>
-        <NamedIndividual abbreviatedIRI=":OtherTreatment"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#OtherTreatment"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:Role"/>
-        <NamedIndividual abbreviatedIRI=":Patient"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Patient"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":PeripartumOnset"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#PeripartumOnset"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:Kind"/>
-        <NamedIndividual abbreviatedIRI=":Person"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Person"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:Kind"/>
-        <NamedIndividual abbreviatedIRI=":Pharmacological"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Pharmacological"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:Kind"/>
-        <NamedIndividual abbreviatedIRI=":Phototherapy"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Phototherapy"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:Kind"/>
-        <NamedIndividual abbreviatedIRI=":Prescription"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Prescription"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":PsychiatricComorbidity"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#PsychiatricComorbidity"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":PsychodynamicTherapy"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#PsychodynamicTherapy"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":PsychomotorAgitationOrDelay"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#PsychomotorAgitationOrDelay"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":PsychosocialStressor"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#PsychosocialStressor"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":Psychostimulant"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Psychostimulant"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:Kind"/>
-        <NamedIndividual abbreviatedIRI=":Psychotherapeutic"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Psychotherapeutic"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":Psychotic"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Psychotic"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":RecurringEpisode"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#RecurringEpisode"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:Kind"/>
-        <NamedIndividual abbreviatedIRI=":RiskFactor"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#RiskFactor"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":SNRIs"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#SNRIs"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":SSRIs"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#SSRIs"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":SeasonalPattern"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#SeasonalPattern"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:Kind"/>
-        <NamedIndividual abbreviatedIRI=":Severity"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Severity"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":SignificantWeightLossOrGain"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#SignificantWeightLossOrGain"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":SingleEpisode"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#SingleEpisode"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:Kind"/>
-        <NamedIndividual abbreviatedIRI=":Specifier"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Specifier"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":SuicidalIdeation"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#SuicidalIdeation"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:Kind"/>
-        <NamedIndividual abbreviatedIRI=":Suport"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Suport"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":SupportGroup"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#SupportGroup"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:Mixin"/>
-        <NamedIndividual abbreviatedIRI=":Symptom"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Symptom"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:Category"/>
-        <NamedIndividual abbreviatedIRI=":SymptomCriteria"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#SymptomCriteria"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:SubKind"/>
-        <NamedIndividual abbreviatedIRI=":TCAs"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#TCAs"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:Category"/>
-        <NamedIndividual abbreviatedIRI=":Treatment"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#Treatment"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="gufo:MaterialRelationshipType"/>
-        <NamedIndividual abbreviatedIRI=":suffersFrom"/>
+        <NamedIndividual IRI="http://2024/mdd/ontology/teste#suffersFrom"/>
     </ClassAssertion>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI=":suffersFrom"/>
-        <Class abbreviatedIRI=":MedicalCondition"/>
+        <ObjectProperty IRI="http://2024/mdd/ontology/teste#suffersFrom"/>
+        <Class IRI="http://2024/mdd/ontology/teste#MedicalCondition"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI=":suffersFrom"/>
-        <Class abbreviatedIRI=":Patient"/>
+        <ObjectProperty IRI="http://2024/mdd/ontology/teste#suffersFrom"/>
+        <Class IRI="http://2024/mdd/ontology/teste#Patient"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:AdditionalSymptom</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#AdditionalSymptom</IRI>
         <Literal xml:lang="en">Additional Symptom</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:AnxiousDistress</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#AnxiousDistress</IRI>
         <Literal xml:lang="en">Anxious distress</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:Atypical</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#Atypical</IRI>
         <Literal xml:lang="en">Atypical</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:AtypicalAntidepressants</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#AtypicalAntidepressants</IRI>
         <Literal xml:lang="en">Atypical Antidepressants</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:Catatonic</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#Catatonic</IRI>
         <Literal xml:lang="en">Catatonic</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:CognitiveBehavialTherapy</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#CognitiveBehavialTherapy</IRI>
         <Literal xml:lang="en">Cognitive Behavial Therapy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:ContextualFactor</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#ContextualFactor</IRI>
         <Literal xml:lang="en">Contextual Factor</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:Course</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#Course</IRI>
         <Literal xml:lang="en">Course</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:DeepBrainStimulation</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#DeepBrainStimulation</IRI>
         <Literal xml:lang="en">Deep brain Stimulation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:DepressedMood</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#DepressedMood</IRI>
         <Literal xml:lang="en">Depressed Mood</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:Diagnosis</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#Diagnosis</IRI>
         <Literal xml:lang="en">Diagnosis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:DiminishedAbilityToThinkConcentrateOrIndecisiveness</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#DiminishedAbilityToThinkConcentrateOrIndecisiveness</IRI>
         <Literal xml:lang="en">Diminished ability to think, concentrate or indecisiveness</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:ElectroconvulsiveTherapy</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#ElectroconvulsiveTherapy</IRI>
         <Literal xml:lang="en">Electroconvulsive Therapy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:EmotionallyDistressingEvent</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#EmotionallyDistressingEvent</IRI>
         <Literal xml:lang="en">Emotionally Distressing Event</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:FamilyTendency</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#FamilyTendency</IRI>
         <Literal xml:lang="en">Family Tendency</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:FatigueOrLossOfEnergy</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#FatigueOrLossOfEnergy</IRI>
         <Literal xml:lang="en">Fatigue or loss of energy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:FeelingsOfWorthlessnessOrExcessiveOrInappropriateGuilt</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#FeelingsOfWorthlessnessOrExcessiveOrInappropriateGuilt</IRI>
         <Literal xml:lang="en">Feelings of worthlessness or excessive or inappropriate guilt</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:FemaleSex</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#FemaleSex</IRI>
         <Literal xml:lang="en">Female Sex</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GeneralMedicalDisorder</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#GeneralMedicalDisorder</IRI>
         <Literal xml:lang="en">General Medical Disorder</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:HealthcareProfessional</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#HealthcareProfessional</IRI>
         <Literal xml:lang="en">Healthcare Professional</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:Herbal</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#Herbal</IRI>
         <Literal xml:lang="en">Herbal</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:High</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#High</IRI>
         <Literal xml:lang="en">High</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:InsomniaOrHypersonmnia</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#InsomniaOrHypersonmnia</IRI>
         <Literal xml:lang="en">Insomnia or hypersonmnia</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:InterpersonalTherapy</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#InterpersonalTherapy</IRI>
         <Literal xml:lang="en">Interpersonal Therapy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:LossOfInterestOrPleasure</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#LossOfInterestOrPleasure</IRI>
         <Literal xml:lang="en">Loss of interest or pleasure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:Low</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#Low</IRI>
         <Literal xml:lang="en">Low</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:MAOIs</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#MAOIs</IRI>
         <Literal xml:lang="en">MAOIs</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:MajorDepressiveDisorder</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#MajorDepressiveDisorder</IRI>
         <Literal xml:lang="en">Major Depressive Disorder</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:MandatorySymptom</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#MandatorySymptom</IRI>
         <Literal xml:lang="en">Mandatory Symptom</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:MedicalComorbidity</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#MedicalComorbidity</IRI>
         <Literal xml:lang="en">Medical Comorbidity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:MedicalCondition</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#MedicalCondition</IRI>
         <Literal xml:lang="en">Medical Condition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:MedicationSideEffect</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#MedicationSideEffect</IRI>
         <Literal xml:lang="en">Medication Side Effect</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:Melancholic</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#Melancholic</IRI>
         <Literal xml:lang="en">Melancholic</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:MixedFeature</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#MixedFeature</IRI>
         <Literal xml:lang="en">Mixed Feature</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:Moderate</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#Moderate</IRI>
         <Literal xml:lang="en">Moderate</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:OtherTreatment</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#OtherTreatment</IRI>
         <Literal xml:lang="en">Other Treatment</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:Patient</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#Patient</IRI>
         <Literal xml:lang="en">Patient</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:PeripartumOnset</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#PeripartumOnset</IRI>
         <Literal xml:lang="en">Peripartum onset</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:Person</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#Person</IRI>
         <Literal xml:lang="en">Person</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:Pharmacological</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#Pharmacological</IRI>
         <Literal xml:lang="en">Pharmacological</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:Phototherapy</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#Phototherapy</IRI>
         <Literal xml:lang="en">Phototherapy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:Prescription</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#Prescription</IRI>
         <Literal xml:lang="en">Prescription</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:PsychiatricComorbidity</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#PsychiatricComorbidity</IRI>
         <Literal xml:lang="en">Psychiatric Comorbidity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:PsychodynamicTherapy</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#PsychodynamicTherapy</IRI>
         <Literal xml:lang="en">Psychodynamic Therapy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:PsychomotorAgitationOrDelay</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#PsychomotorAgitationOrDelay</IRI>
         <Literal xml:lang="en">Psychomotor agitation or delay</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:PsychosocialStressor</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#PsychosocialStressor</IRI>
         <Literal xml:lang="en">Psychosocial Stressor</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:Psychostimulant</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#Psychostimulant</IRI>
         <Literal xml:lang="en">Psychostimulant</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:Psychotherapeutic</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#Psychotherapeutic</IRI>
         <Literal xml:lang="en">Psychotherapeutic</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:Psychotic</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#Psychotic</IRI>
         <Literal xml:lang="en">Psychotic</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:RecurringEpisode</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#RecurringEpisode</IRI>
         <Literal xml:lang="en">Recurring Episode</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:RiskFactor</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#RiskFactor</IRI>
         <Literal xml:lang="en">Risk Factor</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:SNRIs</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#SNRIs</IRI>
         <Literal xml:lang="en">SNRIs</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:SSRIs</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#SSRIs</IRI>
         <Literal xml:lang="en">SSRIs</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:SeasonalPattern</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#SeasonalPattern</IRI>
         <Literal xml:lang="en">Seasonal Pattern</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:Severity</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#Severity</IRI>
         <Literal xml:lang="en">Severity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:SignificantWeightLossOrGain</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#SignificantWeightLossOrGain</IRI>
         <Literal xml:lang="en">Significant weight loss or gain</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:SingleEpisode</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#SingleEpisode</IRI>
         <Literal xml:lang="en">Single Episode</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:Specifier</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#Specifier</IRI>
         <Literal xml:lang="en">Specifier</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:SuicidalIdeation</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#SuicidalIdeation</IRI>
         <Literal xml:lang="en">Suicidal ideation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:Suport</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#Suport</IRI>
         <Literal xml:lang="en">Suport</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:SupportGroup</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#SupportGroup</IRI>
         <Literal xml:lang="en">Support Group</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:Symptom</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#Symptom</IRI>
         <Literal xml:lang="en">Symptom</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:SymptomCriteria</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#SymptomCriteria</IRI>
         <Literal xml:lang="en">Symptom Criteria</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:TCAs</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#TCAs</IRI>
         <Literal xml:lang="en">TCAs</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:Treatment</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#Treatment</IRI>
         <Literal xml:lang="en">Treatment</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:suffersFrom</AbbreviatedIRI>
+        <IRI>http://2024/mdd/ontology/teste#suffersFrom</IRI>
         <Literal xml:lang="en">suffersFrom</Literal>
     </AnnotationAssertion>
 </Ontology>
