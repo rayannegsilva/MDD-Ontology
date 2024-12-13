@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1734055534194" name="http://2024/mdd/ontology/final" uri="mdd.owx"/>
+        <uri id="Automatically generated entry, Timestamp=1734055534194" name="http://2024/mdd/ontology/teste" uri="mdd_owl.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1734055534194" name="http://purl.org/nemo/gufo#" uri="ontologia_mdd.owx"/>
+    </group>
+</catalog>

@@ -10,7 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://2024/mdd/ontology/final">
+    <owl:Ontology rdf:about="http://ontologia/mdd">
         <owl:imports rdf:resource="http://purl.org/nemo/gufo#"/>
     </owl:Ontology>
     
@@ -1525,48 +1525,6 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://2024/mdd/ontology/teste#suffersFrom">
         <rdfs:label xml:lang="en">suffersFrom</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://2024/mdd/ontology/teste#AnxiousDistress"/>
-            <rdf:Description rdf:about="http://2024/mdd/ontology/teste#Atypical"/>
-            <rdf:Description rdf:about="http://2024/mdd/ontology/teste#Catatonic"/>
-            <rdf:Description rdf:about="http://2024/mdd/ontology/teste#Melancholic"/>
-            <rdf:Description rdf:about="http://2024/mdd/ontology/teste#MixedFeature"/>
-            <rdf:Description rdf:about="http://2024/mdd/ontology/teste#PeripartumOnset"/>
-            <rdf:Description rdf:about="http://2024/mdd/ontology/teste#Psychotic"/>
-            <rdf:Description rdf:about="http://2024/mdd/ontology/teste#SeasonalPattern"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://2024/mdd/ontology/teste#EmotionallyDistressingEvent"/>
-            <rdf:Description rdf:about="http://2024/mdd/ontology/teste#FamilyTendency"/>
-            <rdf:Description rdf:about="http://2024/mdd/ontology/teste#FemaleSex"/>
-            <rdf:Description rdf:about="http://2024/mdd/ontology/teste#GeneralMedicalDisorder"/>
-            <rdf:Description rdf:about="http://2024/mdd/ontology/teste#MedicationSideEffect"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://2024/mdd/ontology/teste#MedicalComorbidity"/>
-            <rdf:Description rdf:about="http://2024/mdd/ontology/teste#PsychiatricComorbidity"/>
-            <rdf:Description rdf:about="http://2024/mdd/ontology/teste#PsychosocialStressor"/>
-        </owl:members>
     </rdf:Description>
 </rdf:RDF>
 
